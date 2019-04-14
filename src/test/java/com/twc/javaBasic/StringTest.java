@@ -15,8 +15,7 @@ class StringTest {
         String modifiedString = originalString.replace("original", "new");
 
         // TODO: Please modify the following line to pass the test.
-        //
-        // It is really easy to pass the test. But you have to tell why.
+        //  It is really easy to pass the test. But you have to tell why.
         // <--start
         final boolean areSame = true;
         // --end-->
@@ -32,8 +31,7 @@ class StringTest {
         String modifiedString = originalString.trim();
 
         // TODO: Please modify the following line to pass the test.
-        //
-        // It is really easy to pass the test. But you have to tell why.
+        //  It is really easy to pass the test. But you have to tell why.
         // <--start
         final boolean areSame = true;
         // --end-->
@@ -50,8 +48,7 @@ class StringTest {
         originalString += "Part two.";
 
         // TODO: Please modify the following line to pass the test.
-        //
-        // It is really easy to pass the test. But you have to tell why.
+        //  It is really easy to pass the test. But you have to tell why.
         // <--start
         final boolean areSame = true;
         // --end-->
@@ -149,7 +146,8 @@ class StringTest {
         final String text = "A quick brown fox jumps over a lazy dog.";
 
         int sum = 0;
-        // TODO: Write some code to calculate the checksum of the string. The checksum is the sum of each string char.
+        // TODO: Write some code to calculate the checksum of the string. The checksum
+        //  is the sum of each string char.
         // <--Start
 
         // --End-->
@@ -162,10 +160,10 @@ class StringTest {
         final String expected = "なにこれ";
 
         // TODO: Write actual string using unicode escape. The unicode is as follows:
-        // な - U+306a
-        // に - U+306b
-        // こ - U+3053
-        // れ - U+308c
+        //  な - U+306a
+        //  に - U+306b
+        //  こ - U+3053
+        //  れ - U+308c
         // <--Start
         final String actual = "";
         // --End-->

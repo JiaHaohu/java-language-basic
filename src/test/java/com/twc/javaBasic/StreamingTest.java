@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Test;
 import java.util.*;
 import java.util.function.Consumer;
 import java.util.function.Function;
+import java.util.function.Supplier;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -19,7 +20,10 @@ class StreamingTest {
     void should_be_able_to_turn_collection_into_stream() {
         List<String> words = Arrays.asList("a", "quick", "brown", "fox", "jumps", "over");
 
-        // TODO: please modify the following code to pass the test
+        // TODO:
+        //  Please use stream API to turn a List<String> into a Stream<String>.
+        //  If you find it difficult, please check page 2 of "Core Java Vol 2",
+        //  section 1.1.
         // <--start
         try (Stream<String> wordStream = null)
         // --end-->
@@ -35,7 +39,10 @@ class StreamingTest {
     void should_be_able_to_turn_array_into_stream() {
         String[] words = {"a", "quick", "brown", "fox", "jumps", "over"};
 
-        // TODO: please modify the following code to pass the test
+        // TODO:
+        //  please turn array into a stream.
+        //  If you find it difficult, please check page 5 of "Core Java Vol 2",
+        //  section 1.2.
         // <--start
         try (Stream<String> wordStream = null)
         // --end-->
@@ -49,7 +56,9 @@ class StreamingTest {
 
     @Test
     void should_be_able_to_generate_empty_stream() {
-        // TODO: please modify the following code to pass the test
+        // TODO: please create an empty stream.
+        //  If you find it difficult, please check page 5 of "Core Java Vol 2",
+        //  section 1.2.
         // <--start
         try (Stream<String> emptyWordStream = null)
         // --end-->
@@ -61,7 +70,10 @@ class StreamingTest {
     @SuppressWarnings({"OptionalGetWithoutIsPresent"})
     @Test
     void should_be_able_to_generate_infinite_stream_with_same_items() {
-        // TODO: please modify the following code to pass the test
+        // TODO:
+        //  please modify the following code to generate an infinite stream.
+        //  If you find it difficult, please check page 5 of "Core Java Vol 2",
+        //  section 1.1.
         // <--start
         try (Stream<String> infiniteEchos = null)
         // --end-->
@@ -73,12 +85,17 @@ class StreamingTest {
     @SuppressWarnings("OptionalGetWithoutIsPresent")
     @Test
     void should_be_able_to_generate_infinite_stream_of_sequence() {
-        // TODO: please modify the following code to pass the test
+        // TODO:
+        //  please modify the following code to generate an infinite sequence stream.
+        //  If you find it difficult, please check page 5 of "Core Java Vol 2",
+        //  section 1.1.
         // <--start
         try (Stream<Integer> infiniteSequence = null)
         // --end-->
         {
-            assertEquals(10000, infiniteSequence.skip(10000).findFirst().get().intValue());
+            Integer[] integers = infiniteSequence.limit(100).toArray(Integer[]::new);
+            assertEquals(10, integers[10]);
+            assertEquals(20, integers[20]);
         }
     }
 
@@ -86,7 +103,10 @@ class StreamingTest {
     void should_be_able_to_filter_stream() {
         Stream<String> wordStream = Stream.of("a", "quick", "brown", "fox", "jumps", "over");
 
-        // TODO: please write code to filter word whose length is greater than 4
+        // TODO:
+        //  please write code to filter word whose length is greater than 4.
+        //  If you find it difficult, please check page 9 of "Core Java Vol 2",
+        //  section 1.3.
         // <--start
         try (Stream<String> filtered = null)
         // --end-->
@@ -99,7 +119,10 @@ class StreamingTest {
     void should_be_able_to_map_stream() {
         Stream<String> wordStream = Stream.of("a", "quick", "brown", "fox", "jumps", "over");
 
-        // TODO: please write code to filter word whose length is greater than 4
+        // TODO:
+        //  please write code to filter word whose length is greater than 4
+        //  If you find it difficult, please check page 9 of "Core Java Vol 2",
+        //  section 1.3.
         // <--start
         try (Stream<String> filtered = null)
         // --end-->
@@ -114,7 +137,10 @@ class StreamingTest {
     void should_be_able_to_map_item_to_a_new_type() {
         Stream<String> nameStream = Stream.of("Naruto", "Kisuke", "Tomoya");
 
-        // TODO: please modify the following code to pass the test
+        // TODO:
+        //  please use .map API to pass the test.
+        //  If you find it difficult, please check page 9 of "Core Java Vol 2",
+        //  section 1.3.
         // <--start
         try (Stream<AnimeCharacter> characters = null)
         // --end-->
@@ -136,7 +162,10 @@ class StreamingTest {
                 .of("Naruto", "Kisuke", "Tomoya")
                 .map(StreamingTest::letters);
 
-        // TODO: please modify the following code to pass the test
+        // TODO:
+        //  please modify the following code to pass the test.
+        //  If you find it difficult, please check page 9 of "Core Java Vol 2",
+        //  section 1.3.
         // <--start
         try (Stream<Character> flatted = null)
         // --end-->
@@ -154,7 +183,10 @@ class StreamingTest {
     void should_create_sequence_of_specified_size() {
         Stream<Integer> infiniteSequence = Stream.iterate(0, i -> i + 1);
 
-        // TODO: please modify the following code to pass the test
+        // TODO:
+        //  please modify the following code to pass the test
+        //  If you find it difficult, please check page 10 of "Core Java Vol 2",
+        //  section 1.4.
         // <--start
         try (Stream<Integer> finiteStream = null)
         // --end-->
@@ -171,7 +203,10 @@ class StreamingTest {
         Stream<Character> helloStream = Stream.of('H', 'e', 'l', 'l', 'o');
         Stream<Character> worldStream = Stream.of('W', 'o', 'r', 'l', 'd');
 
-        // TODO: please modify the following code to pass the test
+        // TODO:
+        //  please modify the following code to pass the test.
+        //  If you find it difficult, please check page 10 of "Core Java Vol 2",
+        //  section 1.4.
         // <--start
         try (Stream<Character> concatStream = null)
         // --end-->
@@ -189,6 +224,8 @@ class StreamingTest {
         Stream<Character> characterStream = letters("aquickbrownfox");
 
         // TODO: please modify the following code to pass the test
+        //  If you find it difficult, please check page 11 of "Core Java Vol 2",
+        //  section 1.5.
         // <--start
         try (Stream<Character> distinct = null)
         // --end-->
@@ -216,6 +253,8 @@ class StreamingTest {
         hookStream.forEach(i -> {});
 
         // TODO: please modify the following code to pass the test
+        //  If you find it difficult, please check page 11 of "Core Java Vol 2",
+        //  section 1.5.
         // <--start
         final int expected = Integer.MAX_VALUE;
         // --end-->
@@ -226,7 +265,10 @@ class StreamingTest {
     @SuppressWarnings({"unchecked"})
     @Test
     void should_throws_if_get_value_of_empty_optional() {
-        // TODO: please create an empty optional and specify the concrete exception type.
+        // TODO:
+        //  please create an empty optional and specify the concrete exception type.
+        //  If you find it difficult, please check page 13 of "Core Java Vol 2",
+        //  section 1.7.
         // <--start
         Optional<String> empty = null;
         Class errorType = null;
@@ -240,6 +282,7 @@ class StreamingTest {
         Optional<String> empty = Optional.empty();
         Optional<String> nonEmpty = Optional.of("great");
 
+        // Hint: please implement getValue() method in this class.
         String emptyResult = getValue(empty, "default value");
         String nonEmptyResult = getValue(nonEmpty, "default value");
 
@@ -253,7 +296,9 @@ class StreamingTest {
         Optional<String> empty = Optional.empty();
 
         // TODO: please modify the following code to pass the test
-        // We would like to throw IllegalStateException when Optional is empty.
+        //  We would like to throw IllegalStateException when Optional is empty.
+        //  If you find it difficult, please check page 13 of "Core Java Vol 2",
+        //  section 1.7.
         // <--start
         Runnable emptyRunnable = () -> empty.get();
         // --end-->
@@ -269,6 +314,8 @@ class StreamingTest {
         // TODO:
         //  in the consumer please map the optional value to upper case then add it into
         //  the result list.
+        //  If you find it difficult, please check page 13 of "Core Java Vol 2",
+        //  section 1.7.
         // <--start
         Consumer<Optional<String>> optionalConsumer = null;
         // --end-->
@@ -289,6 +336,8 @@ class StreamingTest {
         //  In this function. Please map the value of Optional<String> to uppercase. Then
         //  add mapped result to the result collection. If the Optional<String> is empty
         //  then nothing is done.
+        //  If you find it difficult, please check page 13 of "Core Java Vol 2",
+        //  section 1.7.
         // <--start
         Function<Optional<String>, Optional<Boolean>> mapping = null;
         // --end-->
@@ -316,6 +365,8 @@ class StreamingTest {
         //  Stream<YieldOptional>. If it exists, then the function should return the
         //  value got by YieldOptional::get method.
         //  If it does not exist, then the function will return empty Optional<>.
+        //  If you find it difficult, please check page 13 of "Core Java Vol 2",
+        //  section 1.7.
         // <--start
         Function<Stream<YieldOptional>, Optional<String>> findFirstAndGet = null;
         // --end-->
@@ -332,9 +383,18 @@ class StreamingTest {
     void should_collect_result() {
         Stream<String> stream = Stream.of("Hello", "What", "is", "your", "name");
 
-        // TODO: please implement toList collector using `stream.collect`. You cannot use existing `toList` collector.
+        // TODO:
+        //  please implement toList collector using `stream.collect`. You cannot use
+        //  existing `toList` collector. You have to use the raw Collector.of() method.
+        //  If you find it difficult, please check the following document:
+        //  https://docs.oracle.com/javase/8/docs/api/java/util/stream/Collector.html#of-java.util.function.Supplier-java.util.function.BiConsumer-java.util.function.BinaryOperator-java.util.stream.Collector.Characteristics...-
+        //  Please also refer to the samples at the beginning of the document.
         // <--start
-        ArrayList<String> list = null;
+        ArrayList<String> list = stream.collect(Collector.of(
+            () -> null,
+            (arrayList, item) -> {},
+            (arr1, arr2) -> null
+        ));
         // --end-->
 
         assertEquals(ArrayList.class, list.getClass());
@@ -352,9 +412,20 @@ class StreamingTest {
                 new KeyValuePair<>("Harry", 2033)
         ).parallel();
 
-        // TODO: please implement toMap collector using `stream.collect`. You cannot use existing `toMap` collector.
+        // TODO:
+        //  please implement toMap collector using `stream.collect`. You cannot use
+        //  existing `toMap` collector.
+        //  If you find it difficult, please check the following document:
+        //  https://docs.oracle.com/javase/8/docs/api/java/util/stream/Collector.html#of-java.util.function.Supplier-java.util.function.BiConsumer-java.util.function.BinaryOperator-java.util.stream.Collector.Characteristics...-
+        //  Please also refer to the samples at the beginning of the document.
         // <--start
-        HashMap<String, Integer> map = null;
+        HashMap<String, Integer> map = stream.collect(
+            Collector.of(
+                () -> null,
+                (tempMap, kv) -> {},
+                (map1, map2) -> null
+            )
+        );
         // --end-->
 
         assertEquals(2, map.size());
@@ -372,7 +443,13 @@ class StreamingTest {
                 new KeyValuePair<>("Harry", 2033)
         ).parallel();
 
-        // TODO: implement grouping collector using `stream.collect`. You cannot use existing `groupingBy` collector.
+        // TODO:
+        //  implement grouping collector using `stream.collect`. You cannot use existing
+        //  `groupingBy` collector. I will not write template code this time. Please refer
+        //  to the last 2 tests.
+        //  If you find it difficult, please check the following document:
+        //  https://docs.oracle.com/javase/8/docs/api/java/util/stream/Collector.html#of-java.util.function.Supplier-java.util.function.BiConsumer-java.util.function.BinaryOperator-java.util.stream.Collector.Characteristics...-
+        //  Please also refer to the samples at the beginning of the document.
         // <--start
         HashMap<String, List<Integer>> map = null;
         // --end-->
@@ -392,7 +469,9 @@ class StreamingTest {
 
         // TODO:
         //  implement grouping collector using `stream.collect`. This time please
-        //  use `Collectors.groupingBy`
+        //  use `Collectors.groupingBy`.
+        //  If you find it difficult, Please check page 28 of "Core Java Vol 2",
+        //  section 1.10.
         // <--start
         Map<String, List<Integer>> map = null;
         // --end-->
@@ -413,6 +492,8 @@ class StreamingTest {
         // TODO:
         //  implement grouping collector using `stream.collect`. You should use
         //  `Collectors.groupingBy`.
+        //  If you find it difficult, Please check page 28 of "Core Java Vol 2",
+        //  section 1.11.
         // <--start
         Map<String, Long> map = null;
         // --end-->
@@ -433,6 +514,8 @@ class StreamingTest {
         // TODO:
         //  implement grouping collector using `stream.collect`. You should use
         //  `Collectors.groupingBy`
+        //  If you find it difficult, Please check page 28 of "Core Java Vol 2",
+        //  section 1.11.
         // <--start
         Map<String, Integer> map = null;
         // --end-->
@@ -454,6 +537,8 @@ class StreamingTest {
         // TODO:
         //  please modify the following code to pass the test. You should use `reduce`
         //  streaming API.
+        //  If you find it difficult, Please check page 33 of "Core Java Vol 2",
+        //  section 1.12.
         // <--start
         Optional<Integer> reduced = null;
         // --end-->
@@ -466,7 +551,10 @@ class StreamingTest {
     void should_calculate_total_character_lengths() {
         List<String> words = Arrays.asList("The", "future", "is", "ours");
 
-        // TODO: please calculate the total number of characters using `reduce`.
+        // TODO:
+        //  please calculate the total number of characters using `reduce`.
+        //  If you find it difficult, Please check page 33 of "Core Java Vol 2",
+        //  section 1.12.
         // <--start
         Integer total = null;
         // --end-->
