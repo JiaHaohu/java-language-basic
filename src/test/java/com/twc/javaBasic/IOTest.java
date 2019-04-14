@@ -1,5 +1,8 @@
 package com.twc.javaBasic;
 
+import com.twc.javaBasic.metadata.DifficultyLevel;
+import com.twc.javaBasic.metadata.KnowledgePoint;
+import com.twc.javaBasic.metadata.TestMetadata;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junitpioneer.jupiter.TempDirectory;
@@ -16,6 +19,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 @ExtendWith(TempDirectory.class)
 class IOTest {
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.MULTIPLE_CROSS_CATEGORY)
     void should_read_write_file_from_file_stream(@TempDirectory.TempDir Path dir) throws Exception {
         final String message = "Hello world!" + System.lineSeparator();
         Path filePath = dir.resolve("sample.txt");
@@ -48,6 +52,7 @@ class IOTest {
     }
 
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_be_able_to_write_and_read_binary_data_to_file(@TempDirectory.TempDir Path dir) throws Exception {
         Path filePath = dir.resolve("sample.bin");
 

@@ -1,5 +1,8 @@
 package com.twc.javaBasic;
 
+import com.twc.javaBasic.metadata.DifficultyLevel;
+import com.twc.javaBasic.metadata.KnowledgePoint;
+import com.twc.javaBasic.metadata.TestMetadata;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -7,6 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class IntegerTypeTest {
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_get_range_of_primitive_int_type() {
         final int maximum = 0x7fffffff;
         final int minimum = 0x80000000;
@@ -27,6 +31,7 @@ class IntegerTypeTest {
     }
 
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_get_range_of_primitive_short_type() {
         final short maximum = 32767;
         final short minimum = -32768;
@@ -44,6 +49,7 @@ class IntegerTypeTest {
     }
 
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_get_range_of_primitive_long_type() {
         final long maximum = 0x7fffffffffffffffL;
         final long minimum = -0x8000000000000000L;
@@ -61,6 +67,7 @@ class IntegerTypeTest {
     }
 
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_get_range_of_primitive_byte_type() {
         final byte maximum = 127;
         final byte minimum = -128;
@@ -78,6 +85,7 @@ class IntegerTypeTest {
     }
 
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_overflow_silently() {
         int theNumberWillOverflow = Integer.MAX_VALUE;
         ++theNumberWillOverflow;
@@ -93,6 +101,7 @@ class IntegerTypeTest {
     }
 
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_underflow_silently() {
         int theNumberWillUnderflow = Integer.MIN_VALUE;
         --theNumberWillUnderflow;
@@ -109,6 +118,7 @@ class IntegerTypeTest {
 
     @SuppressWarnings("ResultOfMethodCallIgnored")
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_throw_exception_when_overflow() {
         int theNumberWillOverflow = Integer.MAX_VALUE;
 
@@ -117,6 +127,7 @@ class IntegerTypeTest {
     }
 
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void just_prevent_lazy_implementation() {
         // Hint: you need to implement add() method in this class.
         assertEquals(3, add(1, 2));
@@ -124,6 +135,7 @@ class IntegerTypeTest {
 
     @SuppressWarnings("PointlessArithmeticExpression")
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_take_care_of_number_type_when_doing_calculation() {
         final double result1 = 2 / 3 * 5;
         final double result2 = 2 * 5 / 3;
@@ -141,6 +153,7 @@ class IntegerTypeTest {
     }
 
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_truncate_number_when_casting() {
         final int integer = 0x0123_4567;
         final short smallerInteger = (short)integer;
@@ -156,6 +169,7 @@ class IntegerTypeTest {
     }
 
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_increment() {
         int integer = 3;
 
@@ -174,6 +188,7 @@ class IntegerTypeTest {
     }
 
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_increment_2() {
         int integer = 3;
 

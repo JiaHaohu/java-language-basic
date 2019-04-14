@@ -1,5 +1,8 @@
 package com.twc.javaBasic;
 
+import com.twc.javaBasic.metadata.DifficultyLevel;
+import com.twc.javaBasic.metadata.KnowledgePoint;
+import com.twc.javaBasic.metadata.TestMetadata;
 import com.twc.javaBasic.util.ClosableStateReference;
 import com.twc.javaBasic.util.ClosableWithException;
 import com.twc.javaBasic.util.ClosableWithoutException;
@@ -13,6 +16,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ExceptionTest {
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_customize_exception() {
         try {
             // Hint: please open StringFormatException.java
@@ -23,6 +27,7 @@ class ExceptionTest {
     }
 
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_customize_exception_continued() {
         Exception innerError = new Exception("inner error");
 
@@ -36,6 +41,7 @@ class ExceptionTest {
     }
 
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_be_careful_of_the_order_of_finally_block() {
         int confusedResult = confuse(2);
 
@@ -50,6 +56,7 @@ class ExceptionTest {
     }
 
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_use_the_try_pattern() {
         ClosableStateReference closableStateReference = new ClosableStateReference();
         try (MyClosableType closable = new MyClosableType(closableStateReference))
@@ -69,6 +76,7 @@ class ExceptionTest {
 
     @SuppressWarnings({"EmptyTryBlock", "unused"})
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_call_closing_even_if_exception_throws() throws Exception {
         ArrayList<String> logger = new ArrayList<>();
 
@@ -93,6 +101,7 @@ class ExceptionTest {
     }
 
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_get_method_name_in_stack_frame() {
         // Hint: please open `StackFrameHelper.java`.
         String methodName = StackFrameHelper.getCurrentMethodName();

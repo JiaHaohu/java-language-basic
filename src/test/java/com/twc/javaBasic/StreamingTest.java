@@ -1,5 +1,8 @@
 package com.twc.javaBasic;
 
+import com.twc.javaBasic.metadata.DifficultyLevel;
+import com.twc.javaBasic.metadata.KnowledgePoint;
+import com.twc.javaBasic.metadata.TestMetadata;
 import com.twc.javaBasic.util.AnimeCharacter;
 import com.twc.javaBasic.util.KeyValuePair;
 import com.twc.javaBasic.util.ValueHolder;
@@ -17,6 +20,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class StreamingTest {
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_be_able_to_turn_collection_into_stream() {
         List<String> words = Arrays.asList("a", "quick", "brown", "fox", "jumps", "over");
 
@@ -36,6 +40,7 @@ class StreamingTest {
     }
 
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_be_able_to_turn_array_into_stream() {
         String[] words = {"a", "quick", "brown", "fox", "jumps", "over"};
 
@@ -55,6 +60,7 @@ class StreamingTest {
     }
 
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_be_able_to_generate_empty_stream() {
         // TODO: please create an empty stream.
         //  If you find it difficult, please check page 5 of "Core Java Vol 2",
@@ -69,6 +75,7 @@ class StreamingTest {
 
     @SuppressWarnings({"OptionalGetWithoutIsPresent"})
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_be_able_to_generate_infinite_stream_with_same_items() {
         // TODO:
         //  please modify the following code to generate an infinite stream.
@@ -84,6 +91,7 @@ class StreamingTest {
 
     @SuppressWarnings("OptionalGetWithoutIsPresent")
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_be_able_to_generate_infinite_stream_of_sequence() {
         // TODO:
         //  please modify the following code to generate an infinite sequence stream.
@@ -100,6 +108,7 @@ class StreamingTest {
     }
 
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.TWO_KNOWLEDGE_POINTS)
     void should_be_able_to_filter_stream() {
         Stream<String> wordStream = Stream.of("a", "quick", "brown", "fox", "jumps", "over");
 
@@ -116,6 +125,7 @@ class StreamingTest {
     }
 
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.TWO_KNOWLEDGE_POINTS)
     void should_be_able_to_map_stream() {
         Stream<String> wordStream = Stream.of("a", "quick", "brown", "fox", "jumps", "over");
 
@@ -134,6 +144,7 @@ class StreamingTest {
     }
 
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.TWO_KNOWLEDGE_POINTS)
     void should_be_able_to_map_item_to_a_new_type() {
         Stream<String> nameStream = Stream.of("Naruto", "Kisuke", "Tomoya");
 
@@ -157,6 +168,7 @@ class StreamingTest {
     }
 
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.TWO_KNOWLEDGE_POINTS)
     void should_flatten_stream_of_streams() {
         Stream<Stream<Character>> nameStream = Stream
                 .of("Naruto", "Kisuke", "Tomoya")
@@ -180,6 +192,7 @@ class StreamingTest {
     }
 
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_create_sequence_of_specified_size() {
         Stream<Integer> infiniteSequence = Stream.iterate(0, i -> i + 1);
 
@@ -199,6 +212,7 @@ class StreamingTest {
     }
 
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_concat_streams() {
         Stream<Character> helloStream = Stream.of('H', 'e', 'l', 'l', 'o');
         Stream<Character> worldStream = Stream.of('W', 'o', 'r', 'l', 'd');
@@ -220,6 +234,7 @@ class StreamingTest {
 
     @SuppressWarnings("SpellCheckingInspection")
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_get_unique_items() {
         Stream<Character> characterStream = letters("aquickbrownfox");
 
@@ -240,6 +255,7 @@ class StreamingTest {
     }
 
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.TWO_KNOWLEDGE_POINTS)
     void should_hook_stream_generation() {
         ValueHolder<Integer> holder = new ValueHolder<>();
         holder.setValue(0);
@@ -264,6 +280,7 @@ class StreamingTest {
 
     @SuppressWarnings({"unchecked"})
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_throws_if_get_value_of_empty_optional() {
         // TODO:
         //  please create an empty optional and specify the concrete exception type.
@@ -278,6 +295,7 @@ class StreamingTest {
     }
 
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_provide_a_default_value_using_or_else() {
         Optional<String> empty = Optional.empty();
         Optional<String> nonEmpty = Optional.of("great");
@@ -292,6 +310,7 @@ class StreamingTest {
 
     @SuppressWarnings("ConstantConditions")
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_be_able_to_throw_for_empty_optional() {
         Optional<String> empty = Optional.empty();
 
@@ -307,6 +326,7 @@ class StreamingTest {
     }
 
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_process_value_if_present() {
         Optional<String> optional = Optional.of("word");
         List<String> result = new ArrayList<>();
@@ -326,6 +346,7 @@ class StreamingTest {
     }
 
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.TWO_KNOWLEDGE_POINTS)
     void should_map_value_if_present() {
         Optional<String> optional = Optional.of("word");
         Optional<String> empty = Optional.empty();
@@ -352,6 +373,7 @@ class StreamingTest {
 
     @SuppressWarnings("ConstantConditions")
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.TWO_KNOWLEDGE_POINTS)
     void should_flat_map_optional_value_do_chain_method() {
         Stream<YieldOptional> emptyStream = Stream.of(1, 2, 3)
                 .filter(i -> i > 4)
@@ -380,6 +402,7 @@ class StreamingTest {
     }
 
     @Test
+    @TestMetadata(value = DifficultyLevel.MEDIUM, kp = KnowledgePoint.MULTIPLE_CROSS_CATEGORY)
     void should_collect_result() {
         Stream<String> stream = Stream.of("Hello", "What", "is", "your", "name");
 
@@ -405,6 +428,7 @@ class StreamingTest {
     }
 
     @Test
+    @TestMetadata(value = DifficultyLevel.MEDIUM, kp = KnowledgePoint.MULTIPLE_CROSS_CATEGORY)
     void should_collect_to_map() {
         Stream<KeyValuePair<String, Integer>> stream = Stream.of(
                 new KeyValuePair<>("Harry", 2002),
@@ -436,6 +460,7 @@ class StreamingTest {
     }
 
     @Test
+    @TestMetadata(value = DifficultyLevel.MEDIUM, kp = KnowledgePoint.MULTIPLE_CROSS_CATEGORY)
     void should_collect_to_group() {
         Stream<KeyValuePair<String, Integer>> stream = Stream.of(
                 new KeyValuePair<>("Harry", 2002),
@@ -460,6 +485,7 @@ class StreamingTest {
     }
 
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_collect_to_group_continued() {
         Stream<KeyValuePair<String, Integer>> stream = Stream.of(
                 new KeyValuePair<>("Harry", 2002),
@@ -482,6 +508,7 @@ class StreamingTest {
     }
 
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_calculate_number_in_each_group() {
         Stream<KeyValuePair<String, Integer>> stream = Stream.of(
                 new KeyValuePair<>("Harry", 2002),
@@ -504,6 +531,7 @@ class StreamingTest {
     }
 
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_calculate_sum_of_each_group() {
         Stream<KeyValuePair<String, Integer>> stream = Stream.of(
                 new KeyValuePair<>("Harry", 2002),
@@ -527,6 +555,7 @@ class StreamingTest {
 
     @SuppressWarnings({"Convert2MethodRef", "OptionalGetWithoutIsPresent"})
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_calculate_sum_using_reduce() {
         List<Integer> numbers = new ArrayList<>();
         Stream
@@ -548,6 +577,7 @@ class StreamingTest {
 
     @SuppressWarnings("Convert2MethodRef")
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_calculate_total_character_lengths() {
         List<String> words = Arrays.asList("The", "future", "is", "ours");
 

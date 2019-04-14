@@ -1,5 +1,8 @@
 package com.twc.javaBasic;
 
+import com.twc.javaBasic.metadata.DifficultyLevel;
+import com.twc.javaBasic.metadata.KnowledgePoint;
+import com.twc.javaBasic.metadata.TestMetadata;
 import com.twc.javaBasic.util.RandomCharacterIterable;
 import org.junit.jupiter.api.Test;
 
@@ -9,6 +12,7 @@ import static org.junit.jupiter.api.Assertions.assertIterableEquals;
 
 class CollectionsTest {
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_go_through_an_iterator() {
         ArrayList<String> collection = new ArrayList<>();
         collection.add("Hello");
@@ -38,6 +42,7 @@ class CollectionsTest {
     }
 
     @Test
+    @TestMetadata(value = DifficultyLevel.MEDIUM, kp = KnowledgePoint.MULTIPLE_CROSS_CATEGORY)
     void should_create_a_sequence_without_putting_all_items_into_memory() {
         // Hint: please open Sequence.java
         Sequence sequence = new Sequence(4, 10);
@@ -45,6 +50,7 @@ class CollectionsTest {
     }
 
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_predict_linked_list_operation_result() {
         LinkedList<String> staff = new LinkedList<>();
 
@@ -69,6 +75,7 @@ class CollectionsTest {
     }
 
     @Test
+    @TestMetadata(value = DifficultyLevel.MEDIUM, kp = KnowledgePoint.MULTIPLE_CROSS_CATEGORY)
     void should_generate_distinct_sequence_on_the_fly() {
         // NOTE: This test may execute for a while. But it is okay if your impl is correct.
         final int oneGagaChars = 1024 * 1024 * 1024;
@@ -84,6 +91,7 @@ class CollectionsTest {
     }
 
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_reflects_back_to_original_list_for_sub_range() {
         List<Integer> integers = new ArrayList<>();
         for (int i = 0; i < 12; ++i) {

@@ -1,5 +1,8 @@
 package com.twc.javaBasic;
 
+import com.twc.javaBasic.metadata.DifficultyLevel;
+import com.twc.javaBasic.metadata.KnowledgePoint;
+import com.twc.javaBasic.metadata.TestMetadata;
 import com.twc.javaBasic.util.InterfaceExtendsInterfaceWithDefaultMethod;
 import com.twc.javaBasic.util.InterfaceExtendsInterfaceWithDefaultMethodImpl;
 import com.twc.javaBasic.util.InterfaceWithDefaultMethodImpl;
@@ -10,6 +13,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class InterfaceTest {
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_support_default_method() {
         InterfaceWithDefaultMethodImpl instance = new InterfaceWithDefaultMethodImpl();
 
@@ -24,6 +28,7 @@ class InterfaceTest {
     }
 
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_choose_override_method() {
         InterfaceWithOverrideDefaultImpl instance = new InterfaceWithOverrideDefaultImpl();
 
@@ -38,6 +43,7 @@ class InterfaceTest {
     }
 
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_choose_override_method_continued() {
         InterfaceExtendsInterfaceWithDefaultMethod instance = new InterfaceExtendsInterfaceWithDefaultMethodImpl();
 
@@ -52,6 +58,7 @@ class InterfaceTest {
     }
 
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_resolve_ambiguity_by_yourself() {
         NameImpl instance = new NameImpl();
 

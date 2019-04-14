@@ -1,5 +1,8 @@
 package com.twc.javaBasic;
 
+import com.twc.javaBasic.metadata.DifficultyLevel;
+import com.twc.javaBasic.metadata.KnowledgePoint;
+import com.twc.javaBasic.metadata.TestMetadata;
 import com.twc.javaBasic.util.GenericFunc;
 import com.twc.javaBasic.util.StringFunc;
 import com.twc.javaBasic.util.ThisInClosure;
@@ -12,6 +15,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class LambdaTest {
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_apply_to_interface_with_single_abstract_method() {
         StringFunc lambda = () -> "Hello";
 
@@ -26,6 +30,7 @@ class LambdaTest {
     }
 
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_be_able_to_bind_to_instance_method() {
         // TODO:
         //  please bind lambda to `instanceMethod()` in this class.
@@ -38,6 +43,7 @@ class LambdaTest {
     }
 
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_be_able_to_bind_to_static_method() {
         // TODO: please bind lambda to `staticMethod()` in this class.
         //  For reference please check page 319 of "Core Java Vol 1", section 6.3.4.
@@ -49,6 +55,7 @@ class LambdaTest {
     }
 
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_bind_to_constructor() {
         // TODO:
         //  please bind lambda to constructor of ArrayList<Integer>.
@@ -63,6 +70,7 @@ class LambdaTest {
     }
 
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_capture_variable_in_a_closure() {
         int captured = 5;
 
@@ -81,6 +89,7 @@ class LambdaTest {
     }
 
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_evaluate_captured_variable_when_executing() {
         ValueHolder<String> value = new ValueHolder<>();
         value.setValue("I am the King of the world!");
@@ -100,6 +109,7 @@ class LambdaTest {
     }
 
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_extend_variable_scope() {
         StringFunc stringFunc = returnLambda();
         String message = stringFunc.getString();
@@ -115,6 +125,7 @@ class LambdaTest {
     }
 
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_capture_this_variable() {
         ThisInClosure instance = new ThisInClosure();
         StringFunc stringFunc = instance.getLambda();

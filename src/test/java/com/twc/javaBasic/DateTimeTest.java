@@ -1,5 +1,8 @@
 package com.twc.javaBasic;
 
+import com.twc.javaBasic.metadata.DifficultyLevel;
+import com.twc.javaBasic.metadata.KnowledgePoint;
+import com.twc.javaBasic.metadata.TestMetadata;
 import org.junit.jupiter.api.Test;
 
 import java.time.*;
@@ -12,6 +15,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 class DateTimeTest {
     @SuppressWarnings("ConstantConditions")
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_be_able_to_use_absolute_time_to_measure_duration() throws Exception {
         Duration elapsed = null;
 
@@ -36,6 +40,7 @@ class DateTimeTest {
     }
 
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_be_careful_when_adding_by_month() {
         LocalDate endOfJan = LocalDate.of(2016, 1, 31);
         LocalDate localDate = endOfJan.plusMonths(1);
@@ -51,6 +56,7 @@ class DateTimeTest {
     }
 
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_get_the_next_or_the_same_tuesday() {
         LocalDate date = LocalDate.of(2016, 1, 1);
 
@@ -68,6 +74,7 @@ class DateTimeTest {
     }
 
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_turn_around_if_exceeds_24_hours_for_local_time() {
         LocalTime bedTime = LocalTime.of(22, 30);
         LocalTime wakeUpTime = bedTime.plusHours(8);
@@ -81,6 +88,7 @@ class DateTimeTest {
     }
 
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_correctly_calculate_daylight_saving_time() {
         ZonedDateTime meeting = ZonedDateTime.of(
                 LocalDateTime.of(2013, 10, 24, 8, 0, 0),
@@ -101,6 +109,7 @@ class DateTimeTest {
     }
 
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_format_to_iso_date_time() {
         ZonedDateTime beijingTime = ZonedDateTime.of(
                 LocalDateTime.of(2018, 8, 3, 0, 0, 0),
@@ -121,6 +130,7 @@ class DateTimeTest {
 
     @SuppressWarnings("ConstantConditions")
     @Test
+    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_be_able_to_parse_date_time() {
         final String expect = "2018-08-03T00:00:00+08:00";
 
