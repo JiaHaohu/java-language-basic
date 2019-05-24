@@ -132,12 +132,12 @@ class StreamingTest {
         // TODO:
         //  please write code to map current sequence to uppercase
         // <--start
-        try (Stream<String> filtered = null)
+        try (Stream<String> mapped = null)
         // --end-->
         {
             assertArrayEquals(
                     new String[]{"A", "QUICK", "BROWN", "FOX", "JUMPS", "OVER"},
-                    filtered.toArray(String[]::new));
+                    mapped.toArray(String[]::new));
         }
     }
 
