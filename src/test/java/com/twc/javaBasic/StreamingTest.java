@@ -130,9 +130,7 @@ class StreamingTest {
         Stream<String> wordStream = Stream.of("a", "quick", "brown", "fox", "jumps", "over");
 
         // TODO:
-        //  please write code to filter word whose length is greater than 4
-        //  If you find it difficult, please check page 9 of "Core Java Vol 2",
-        //  section 1.3.
+        //  please write code to map current sequence to uppercase
         // <--start
         try (Stream<String> filtered = null)
         // --end-->
