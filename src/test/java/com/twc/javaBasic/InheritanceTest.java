@@ -1,8 +1,5 @@
 package com.twc.javaBasic;
 
-import com.twc.javaBasic.metadata.DifficultyLevel;
-import com.twc.javaBasic.metadata.KnowledgePoint;
-import com.twc.javaBasic.metadata.TestMetadata;
 import com.twc.javaBasic.util.*;
 import org.junit.jupiter.api.Test;
 
@@ -12,7 +9,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class InheritanceTest {
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_be_derived_from_object_class() {
         // TODO:
         //  Please write down the class type directly. If you find it difficult, please
@@ -25,7 +21,6 @@ class InheritanceTest {
     }
 
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_call_super_class_constructor() {
         DerivedFromSuperClassWithDefaultConstructor instance = new DerivedFromSuperClassWithDefaultConstructor();
 
@@ -42,7 +37,6 @@ class InheritanceTest {
     }
 
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_call_super_class_constructor_continued() {
         DerivedFromSuperClassWithDefaultConstructor instance = new DerivedFromSuperClassWithDefaultConstructor(42);
 
@@ -59,7 +53,6 @@ class InheritanceTest {
     }
 
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_call_super_class_constructor_more() {
         DerivedFromSuperClassWithDefaultConstructor instance = new DerivedFromSuperClassWithDefaultConstructor("God");
 
@@ -76,7 +69,6 @@ class InheritanceTest {
     }
 
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_call_most_derived_methods() {
         BaseClassForOverriding instance = new DerivedFromBaseClassForOverriding();
 
@@ -89,7 +81,6 @@ class InheritanceTest {
     }
 
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_call_super_class_methods() {
         DerivedFromBaseClassForOverridingCallingSuper instance = new DerivedFromBaseClassForOverridingCallingSuper();
 
@@ -103,7 +94,6 @@ class InheritanceTest {
 
     @SuppressWarnings({"RedundantCast", "UnnecessaryLocalVariable"})
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_use_caution_when_dealing_with_array_type() {
         DerivedFromSuperClassWithDefaultConstructor[] array = new DerivedFromSuperClassWithDefaultConstructor[4];
         SuperClassWithDefaultConstructor[] arrayWithBaseType = (SuperClassWithDefaultConstructor[])array;
@@ -128,7 +118,6 @@ class InheritanceTest {
 
     @SuppressWarnings("UnnecessaryLocalVariable")
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_not_make_you_confused() {
         NestedDerivedClassWithName nested = new NestedDerivedClassWithName();
         DerivedFromBaseClassWithName derived = nested;
@@ -143,7 +132,6 @@ class InheritanceTest {
     }
 
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_not_make_you_confused_2() {
         DerivedFromBaseClassWithName derived = new DerivedFromBaseClassWithName();
 
@@ -158,7 +146,6 @@ class InheritanceTest {
 
     @SuppressWarnings("ConstantConditions")
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_use_instance_of_to_determine_inheritance_relationship() {
         NestedDerivedClassWithName nested = new NestedDerivedClassWithName();
 
@@ -178,7 +165,6 @@ class InheritanceTest {
 
     @SuppressWarnings({"ConstantConditions", "UnnecessaryBoxing"})
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_use_instance_of_only_in_inheritance_relationship() {
         final Object integer = new Integer(42);  // the magic of life
 
@@ -196,7 +182,6 @@ class InheritanceTest {
 
     @SuppressWarnings({"SimplifiableJUnitAssertion", "EqualsWithItself"})
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_write_perfect_equals_1() {
         // Please open PersonForEquals.java
         PersonForEquals person = new PersonForEquals("James", (short) 1990);
@@ -206,7 +191,6 @@ class InheritanceTest {
 
     @SuppressWarnings("SimplifiableJUnitAssertion")
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_write_perfect_equals_2() {
         PersonForEquals person = new PersonForEquals("James", (short) 1990);
         PersonForEquals samePerson = new PersonForEquals("James", (short) 1990);
@@ -217,7 +201,6 @@ class InheritanceTest {
 
     @SuppressWarnings("SimplifiableJUnitAssertion")
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_write_perfect_equals_3() {
         PersonForEquals person = new PersonForEquals("James", (short) 1990);
         PersonForEquals samePerson = new PersonForEquals("James", (short) 1990);
@@ -230,7 +213,6 @@ class InheritanceTest {
 
     @SuppressWarnings({"ConstantConditions", "ObjectEqualsNull", "SimplifiableJUnitAssertion"})
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_write_perfect_equals_4() {
         PersonForEquals person = new PersonForEquals("James", (short) 1990);
 
@@ -239,7 +221,6 @@ class InheritanceTest {
 
     @SuppressWarnings({"EqualsBetweenInconvertibleTypes", "SimplifiableJUnitAssertion", "UnnecessaryBoxing"})
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_write_perfect_equals_5() {
         PersonForEquals person = new PersonForEquals("James", (short) 1990);
         Integer instanceWithOtherType = new Integer(1990);
@@ -249,7 +230,6 @@ class InheritanceTest {
 
     @SuppressWarnings("SimplifiableJUnitAssertion")
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_write_perfect_equals_6() {
         PersonForEquals person = new PersonForEquals("James", (short) 1990);
         PersonForEquals different = new PersonForEquals("James", (short) 1991);
@@ -259,7 +239,6 @@ class InheritanceTest {
     }
 
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_write_perfect_equals_7() {
         PersonForEquals person = new PersonForEquals("James", (short) 1990);
         PersonForEquals different1 = new PersonForEquals("James", (short) 1991);

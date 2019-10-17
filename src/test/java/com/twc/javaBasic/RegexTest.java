@@ -1,15 +1,9 @@
 package com.twc.javaBasic;
 
-import com.twc.javaBasic.metadata.DifficultyLevel;
-import com.twc.javaBasic.metadata.KnowledgePoint;
-import com.twc.javaBasic.metadata.TestMetadata;
 import com.twc.javaBasic.util.Match;
 import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -18,7 +12,6 @@ class RegexTest {
     //  https://docs.oracle.com/javase/tutorial/essential/regex/index.html
 
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_match_literals() {
         final String regex = "foo";
         final String text = "I contains foo.";
@@ -44,7 +37,6 @@ class RegexTest {
     }
 
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_match_character_classes() {
         // TODO:
         //  Please create an expression which extract something that begins with 'b' and
@@ -64,7 +56,6 @@ class RegexTest {
     }
 
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_match_predefined_classes_and_groups() {
         // TODO:
         //  Please create an expression which extract something that begins with a
@@ -83,7 +74,6 @@ class RegexTest {
     }
 
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_match_boundary() {
         // TODO:
         //  Please create an expression which extract English words "dog".

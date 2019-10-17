@@ -1,8 +1,5 @@
 package com.twc.javaBasic;
 
-import com.twc.javaBasic.metadata.DifficultyLevel;
-import com.twc.javaBasic.metadata.KnowledgePoint;
-import com.twc.javaBasic.metadata.TestMetadata;
 import com.twc.javaBasic.util.EscapedChars;
 import org.junit.jupiter.api.Test;
 
@@ -10,11 +7,12 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class CharTypeTest {
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_describe_escaped_chars() {
-        // TODO:
-        //   Please write down the correct escaped characters. If you meet difficulties,
-        //   please refer to page 50 of "Core Java Vol 1", section 3.3.3.
+        // SUPER_TODO:
+        //  Please write down the correct escaped characters.
+        //
+        // Hint:
+        //  If you meet difficulties, please refer to page 50 of "Core Java Vol 1", section 3.3.3.
         // <-start--
         final char backspace = ' ';
         final char tab = ' ';

@@ -1,15 +1,11 @@
 package com.twc.javaBasic;
 
-import com.twc.javaBasic.metadata.DifficultyLevel;
-import com.twc.javaBasic.metadata.KnowledgePoint;
-import com.twc.javaBasic.metadata.TestMetadata;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 class ArrayTest {
     @Test
-    @TestMetadata(value = DifficultyLevel.MEDIUM, kp = KnowledgePoint.MULTIPLE_KNOWLEDGE_POINTS)
     void should_resize_array() {
         final int itemsCount = 25;
         final int initialCapacity = 10;

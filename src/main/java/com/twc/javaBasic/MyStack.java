@@ -22,7 +22,7 @@ public class MyStack {
             ensureCapacity();
         }
 
-        // TODO: Please push the value into the storage here.
+        // SUPER_TODO: Please push the value into the storage here.
         // <--start
 
         // --end-->
@@ -31,12 +31,13 @@ public class MyStack {
     private void ensureCapacity() {
         int newCapacity = capacity * GROW_FACTOR;
 
-        // TODO:
-        //  Please create a new array of size newCapacity. Copy the original values into
-        //  The new array, and update related fields.
+        // SUPER_TODO:
+        //  Please create a new array of size newCapacity. Copy the original values into The new
+        //  array, and update related fields.
         //  IMPORTANT: You SHOULD NOT USE COLLECTIONS (such as List<T>) OTHER THAN ARRAY.
-        //  If you meet difficulties, please refer to page 114 of "Core Java Vol 1",
-        //  section 3.10.3.
+        //
+        // Hint:
+        //  If you meet difficulties, please refer to page 114 of "Core Java Vol 1", section 3.10.3.
         // <--start
 
         // --end-->
@@ -54,7 +55,7 @@ public class MyStack {
     }
 
     private int pop() {
-        // TODO:
+        // SUPER_TODO:
         //  Please pop one element from the array. You should update the `count` field
         //  as well.
         // <--start

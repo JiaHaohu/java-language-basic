@@ -1,8 +1,5 @@
 package com.twc.javaBasic;
 
-import com.twc.javaBasic.metadata.DifficultyLevel;
-import com.twc.javaBasic.metadata.KnowledgePoint;
-import com.twc.javaBasic.metadata.TestMetadata;
 import com.twc.javaBasic.util.*;
 import org.junit.jupiter.api.Test;
 
@@ -15,7 +12,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class ObjectTest {
     @SuppressWarnings({"UnnecessaryLocalVariable", "ConstantConditions"})
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_point_to_the_same_object() {
         Object objectReference = new Object();
         Object sameReference = objectReference;
@@ -33,7 +29,6 @@ class ObjectTest {
 
     @SuppressWarnings("NewObjectEquality")
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_point_to_different_object() {
         LocalDate goodDay = LocalDate.of(2018, 5, 10);
         LocalDate sameDay = LocalDate.of(2018, 5, 10);
@@ -51,7 +46,6 @@ class ObjectTest {
 
     @SuppressWarnings("ConstantConditions")
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_initialized_to_default_value() {
         FieldNotExplicitlyInitialized instance = new FieldNotExplicitlyInitialized();
 
@@ -70,7 +64,6 @@ class ObjectTest {
     }
 
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_pass_by_value() {
         int value = 5;
 
@@ -93,7 +86,6 @@ class ObjectTest {
 
     @SuppressWarnings({"UnnecessaryLocalVariable", "unused"})
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_pass_by_value_continued() {
         Object objectReference = new Object();
         final Object sameReference = objectReference;
@@ -113,7 +105,6 @@ class ObjectTest {
     }
 
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_modify_internal_state() {
         SimpleObjectWithInternalState instance = new SimpleObjectWithInternalState("Initial Name");
 
@@ -130,7 +121,6 @@ class ObjectTest {
     }
 
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_choose_method_at_compile_time() {
         OverloadingFixture fixture = new OverloadingFixture();
 
@@ -147,7 +137,6 @@ class ObjectTest {
     }
 
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_choose_the_most_specific_overload() {
         OverloadingFixture fixture = new OverloadingFixture();
         final String name = "name";
@@ -166,7 +155,6 @@ class ObjectTest {
     }
 
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_calling_another_constructor() {
         CallingAnotherCtor instance = new CallingAnotherCtor();
 
@@ -182,7 +170,6 @@ class ObjectTest {
 
     @SuppressWarnings("unused")
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.TWO_KNOWLEDGE_POINTS)
     void should_get_initialization_ordering() {
         InitializationOrderClass.resetLogs();
         InitializationOrderClass instance = new InitializationOrderClass();
@@ -199,7 +186,6 @@ class ObjectTest {
     }
 
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_get_message_of_var_length_parameters() {
         final String message = getMessageOfVarLengthParameters(1, 2, 3);
 
@@ -216,7 +202,6 @@ class ObjectTest {
 
     @SuppressWarnings("RedundantArrayCreation")
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_get_message_of_var_length_parameters_2() {
         final String message = getMessageOfVarLengthParameters(new Object[] {1, 2, 3});
 

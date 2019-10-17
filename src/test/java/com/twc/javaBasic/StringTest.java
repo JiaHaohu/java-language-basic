@@ -1,8 +1,5 @@
 package com.twc.javaBasic;
 
-import com.twc.javaBasic.metadata.DifficultyLevel;
-import com.twc.javaBasic.metadata.KnowledgePoint;
-import com.twc.javaBasic.metadata.TestMetadata;
 import org.junit.jupiter.api.Test;
 
 import java.util.Optional;
@@ -13,7 +10,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class StringTest {
     @SuppressWarnings({"StringEquality", "ConstantConditions"})
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_be_immutable() {
         String originalString = "The original string";
         String modifiedString = originalString.replace("original", "new");
@@ -30,7 +26,6 @@ class StringTest {
 
     @SuppressWarnings({"StringEquality", "ConstantConditions"})
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void all_modification_method_will_create_new_string() {
         String originalString = "The string with tailing space.     ";
         String modifiedString = originalString.trim();
@@ -47,7 +42,6 @@ class StringTest {
 
     @SuppressWarnings("StringEquality")
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void will_create_new_string_when_concat() {
         String originalString = "Part one. ";
         String copyOfOriginalString = originalString;
@@ -65,7 +59,6 @@ class StringTest {
 
     @SuppressWarnings("unused")
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_taken_string_apart() {
         final String originalString = "Java is great";
 
@@ -81,7 +74,6 @@ class StringTest {
 
     @SuppressWarnings("unused")
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_taken_string_apart_continued() {
         final String originalString = "Java is great.";
 
@@ -105,7 +97,6 @@ class StringTest {
 
     @SuppressWarnings({"unused"})
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_break_string_into_words() {
         final String sentence = "This is Mike";
 
@@ -119,7 +110,6 @@ class StringTest {
 
     @SuppressWarnings({"unused"})
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_break_string_into_words_customized() {
         final String sentence = "This/is/Mike";
 
@@ -133,7 +123,6 @@ class StringTest {
 
     @SuppressWarnings({"unused", "MismatchedQueryAndUpdateOfStringBuilder"})
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_create_ascii_art() {
         final int width = 5;
         final int height = 3;
@@ -153,7 +142,6 @@ class StringTest {
 
     @SuppressWarnings("unused")
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_calculate_checksum_of_a_string() {
         final String text = "A quick brown fox jumps over a lazy dog.";
 
@@ -168,7 +156,6 @@ class StringTest {
     }
 
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_convert_unicode_escape() {
         final String expected = "なにこれ";
 
@@ -186,7 +173,6 @@ class StringTest {
 
     @SuppressWarnings("unused")
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_reverse_a_string() {
         final String original = "123456";
 
@@ -200,7 +186,6 @@ class StringTest {
 
     @SuppressWarnings("ConstantConditions")
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_compare_string_with_different_cases() {
         final String upperCased = "HELLO";
         final String lowerCased = "hello";
@@ -219,7 +204,6 @@ class StringTest {
     }
 
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_get_code_point_count() {
         final String withSurrogatePairs =
                 new String(Character.toChars(0x20B9F)) + " is a character that you may not know";
@@ -237,7 +221,6 @@ class StringTest {
     }
 
     @Test
-    @TestMetadata(value = DifficultyLevel.MEDIUM, kp = KnowledgePoint.MULTIPLE_CROSS_CATEGORY)
     void should_copy_all_code_point_to_array() {
         final String withSurrogatePairs =
                 new String(Character.toChars(0x20B9F)) + " is funny";
@@ -250,7 +233,6 @@ class StringTest {
     }
 
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_format_string() {
         final String name = "Harry";
         final int age = 23;

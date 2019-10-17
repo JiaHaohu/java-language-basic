@@ -1,22 +1,17 @@
 package com.twc.javaBasic;
 
-import com.twc.javaBasic.metadata.DifficultyLevel;
-import com.twc.javaBasic.metadata.KnowledgePoint;
-import com.twc.javaBasic.metadata.TestMetadata;
 import com.twc.javaBasic.util.Employee;
 import com.twc.javaBasic.util.KeyValuePair;
 import com.twc.javaBasic.util.Manager;
 import com.twc.javaBasic.util.Pair;
 import org.junit.jupiter.api.Test;
 
-import javax.swing.text.html.Option;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class GenericTest {
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_auto_resolve_generic_method() {
         final String[] words = {"Hello", "Good", "Morning"};
 
@@ -31,7 +26,6 @@ class GenericTest {
     }
 
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_specify_a_type_restriction_on_typed_parameters() {
         // Hint: please implement the min() method in this class.
         int minimumInteger = min(new Integer[]{1, 2, 3});
@@ -42,7 +36,6 @@ class GenericTest {
     }
 
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_not_know_generic_type_parameters_at_runtime() {
         KeyValuePair<String, Integer> pair = new KeyValuePair<>("name", 2);
         KeyValuePair<Integer, String> pairWithDifferentTypeParameter = new KeyValuePair<>(2, "name");
@@ -59,7 +52,6 @@ class GenericTest {
 
     @SuppressWarnings({"UnnecessaryLocalVariable", "unchecked", "unused"})
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_be_careful_of_raw_type_generic() {
         Pair<Manager> managerPair = new Pair<>();
         Pair rawPair = managerPair;
@@ -83,7 +75,6 @@ class GenericTest {
     }
 
     @Test
-    @TestMetadata(value = DifficultyLevel.MEDIUM, kp = KnowledgePoint.TWO_KNOWLEDGE_POINTS)
     void should_swap() {
         Pair<String> pair = new Pair<>("Hello", "World");
 

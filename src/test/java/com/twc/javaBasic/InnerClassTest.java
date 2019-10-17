@@ -1,8 +1,5 @@
 package com.twc.javaBasic;
 
-import com.twc.javaBasic.metadata.DifficultyLevel;
-import com.twc.javaBasic.metadata.KnowledgePoint;
-import com.twc.javaBasic.metadata.TestMetadata;
 import com.twc.javaBasic.util.AnonymousClassUpdateField;
 import com.twc.javaBasic.util.InnerClassUpdateField;
 import com.twc.javaBasic.util.LocalClassUpdateField;
@@ -16,7 +13,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class InnerClassTest {
 
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_access_instance_field_of_parent_class() {
         InnerClassUpdateField instance = new InnerClassUpdateField();
         instance.somethingHappen();
@@ -32,7 +28,6 @@ class InnerClassTest {
     }
 
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_refer_inner_class_from_outside() {
         InnerClassUpdateField instance = new InnerClassUpdateField();
 
@@ -50,7 +45,6 @@ class InnerClassTest {
     }
 
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_update_field_using_local_class() {
         LocalClassUpdateField instance = new LocalClassUpdateField();
         instance.somethingHappen();
@@ -67,7 +61,6 @@ class InnerClassTest {
     }
 
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_update_field_using_anonymous_class() {
         AnonymousClassUpdateField instance = new AnonymousClassUpdateField();
         instance.somethingHappen();
@@ -83,7 +76,6 @@ class InnerClassTest {
     }
 
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_create_instance_for_static_inner_class() {
         StaticInnerClass instance = new StaticInnerClass();
         StaticInnerClass.Inner inner = instance.createInner();

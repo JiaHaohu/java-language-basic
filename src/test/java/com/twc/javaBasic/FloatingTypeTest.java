@@ -1,15 +1,11 @@
 package com.twc.javaBasic;
 
-import com.twc.javaBasic.metadata.DifficultyLevel;
-import com.twc.javaBasic.metadata.KnowledgePoint;
-import com.twc.javaBasic.metadata.TestMetadata;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class FloatingTypeTest {
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_not_get_rounded_result_if_convert_floating_number_to_integer() {
         final float floatingPointNumber = 2.75f;
         final int integer = (int)floatingPointNumber;
@@ -26,7 +22,6 @@ class FloatingTypeTest {
 
     @SuppressWarnings({"divzero", "NumericOverflow"})
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_judge_special_double_cases() {
         // Hint, please implement isInfinity and isNan in this class.
         assertTrue(isInfinity(1d / 0d));
@@ -40,7 +35,6 @@ class FloatingTypeTest {
     }
 
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_not_round_number_when_convert_to_integer() {
         final float floatingPointNumber = 2.75f;
         final int integer = (int)floatingPointNumber;
@@ -56,7 +50,6 @@ class FloatingTypeTest {
     }
 
     @Test
-    @TestMetadata(value = DifficultyLevel.EASY, kp = KnowledgePoint.SINGLE_KNOWLEDGE_POINT)
     void should_round_number() {
         final double floatingPointNumber = 2.75;
 
