@@ -2,7 +2,7 @@ package com.twc.javaBasic;
 
 public class StringFormatException extends Exception {
     public StringFormatException(String message) {
-        // SUPER_TODO:
+        // TODO:
         //  please implement a very basic exception class.
         //
         // Hint:
@@ -13,7 +13,7 @@ public class StringFormatException extends Exception {
     }
 
     public StringFormatException(String message, Throwable cause) {
-        // SUPER_TODO:
+        // TODO:
         //  please implement a very basic exception class.
         //
         // Hint:

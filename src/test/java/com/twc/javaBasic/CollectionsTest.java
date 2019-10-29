@@ -24,7 +24,7 @@ class CollectionsTest {
     private static List<String> createList(Iterator<String> iterator) {
         List<String> list = new ArrayList<>();
 
-        // SUPER_TODO:
+        // TODO:
         //  This function will create a list from an iterator. You could ONLY use
         //  `Iterator.hasNext` and `Iterator.next` API to copy items to a `List`.
         //  No `for` is allowed.
@@ -60,7 +60,7 @@ class CollectionsTest {
         iterator.previous();
         iterator.remove();
 
-        // SUPER_TODO:
+        // TODO:
         //  Please write your answer directly.
         //
         // Hint:
@@ -97,7 +97,7 @@ class CollectionsTest {
         List<Integer> subList = integers.subList(3, 10);
         subList.clear();
 
-        // SUPER_TODO:
+        // TODO:
         //  Please write down your answer directly.
         //
         // Hint:

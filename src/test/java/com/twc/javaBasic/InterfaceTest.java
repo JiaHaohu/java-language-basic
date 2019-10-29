@@ -13,7 +13,7 @@ class InterfaceTest {
     void should_support_default_method() {
         InterfaceWithDefaultMethodImpl instance = new InterfaceWithDefaultMethodImpl();
 
-        // SUPER_TODO:
+        // TODO:
         //  Please write down your answer directly.
         //
         // Hint:
@@ -29,7 +29,7 @@ class InterfaceTest {
     void should_choose_override_method() {
         InterfaceWithOverrideDefaultImpl instance = new InterfaceWithOverrideDefaultImpl();
 
-        // SUPER_TODO:
+        // TODO:
         //  Please write down your answer directly.
         //
         // Hint:
@@ -45,7 +45,7 @@ class InterfaceTest {
     void should_choose_override_method_continued() {
         InterfaceExtendsInterfaceWithDefaultMethod instance = new InterfaceExtendsInterfaceWithDefaultMethodImpl();
 
-        // SUPER_TODO:
+        // TODO:
         //  Please write down your answer directly.
         //
         // Hint

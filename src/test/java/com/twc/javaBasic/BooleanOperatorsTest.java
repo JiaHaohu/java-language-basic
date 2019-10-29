@@ -26,7 +26,7 @@ class BooleanOperatorsTest {
                 4 != 5
         };
 
-        // SUPER_TODO:
+        // TODO:
         //  please write your answers directly.
         //
         // Hint:
@@ -44,7 +44,7 @@ class BooleanOperatorsTest {
         final int value = 0x1234_abcd;
         final int mask = 0x000f_ff00;
 
-        // SUPER_TODO:
+        // TODO:
         //  please write your answers directly. Please note that you should keep you answer in
         //  HEX mode.
         //
@@ -63,7 +63,7 @@ class BooleanOperatorsTest {
         final int value = 0x1234_0000;
         final int mask = 0x0000_abcd;
 
-        // SUPER_TODO:
+        // TODO:
         //  please write your answers directly. Please note that you should keep you answer in
         //  HEX mode.
         //
@@ -81,7 +81,7 @@ class BooleanOperatorsTest {
     void should_do_bitwise_not_operation() {
         final int value = 0x0000_ffff;
 
-        // SUPER_TODO:
+        // TODO:
         //  please write your answers directly. Please note that you should keep you answer in
         //  HEX mode.
         //

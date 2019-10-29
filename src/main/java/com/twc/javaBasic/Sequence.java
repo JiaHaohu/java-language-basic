@@ -23,7 +23,7 @@ class SequenceIterator implements Iterator<Integer> {
     private final Integer end;
 
     SequenceIterator(Integer start, Integer end) {
-        // SUPER_TODO:
+        // TODO:
         //  please implements the following code to pass the test.
         //
         // Hint:
@@ -35,7 +35,7 @@ class SequenceIterator implements Iterator<Integer> {
 
     @Override
     public boolean hasNext() {
-        // SUPER_TODO:
+        // TODO:
         //  please implements the following code to pass the test.
         //
         // Hint:
@@ -47,7 +47,7 @@ class SequenceIterator implements Iterator<Integer> {
 
     @Override
     public Integer next() {
-        // SUPER_TODO:
+        // TODO:
         //  please implements the following code to pass the test.
         //
         // Hint:

@@ -13,7 +13,7 @@ class DateTimeTest {
     void should_be_able_to_use_absolute_time_to_measure_duration() throws Exception {
         Duration elapsed = null;
 
-        // SUPER_TODO:
+        // TODO:
         //  please measure the execution time of `delayOneSecond` using `Instant` and
         //  `Duration`.
         //
@@ -26,7 +26,7 @@ class DateTimeTest {
 
         delayOneSecond();
 
-        // SUPER_TODO:
+        // TODO:
         //  please measure the execution time of `delayOneSecond` using `Instant`and
         //  `Duration`
         // <--start
@@ -41,7 +41,7 @@ class DateTimeTest {
         LocalDate endOfJan = LocalDate.of(2016, 1, 31);
         LocalDate localDate = endOfJan.plusMonths(1);
 
-        // SUPER_TODO:
+        // TODO:
         //  Please write down your answer directly.
         //
         // Hint:
@@ -57,7 +57,7 @@ class DateTimeTest {
     void should_get_the_next_or_the_same_tuesday() {
         LocalDate date = LocalDate.of(2016, 1, 1);
 
-        // SUPER_TODO:
+        // TODO:
         //  please call Date and Time API to get the next Tuesday or the same day if today is
         //  Tuesday.
         //
@@ -77,7 +77,7 @@ class DateTimeTest {
         LocalTime bedTime = LocalTime.of(22, 30);
         LocalTime wakeUpTime = bedTime.plusHours(8);
 
-        // SUPER_TODO:
+        // TODO:
         //  Please give expected local time directly.
         // <--start
         final LocalTime expected = null;
@@ -92,7 +92,7 @@ class DateTimeTest {
                 LocalDateTime.of(2013, 10, 24, 8, 0, 0),
                 ZoneId.of("Europe/Berlin"));
 
-        // SUPER_TODO:
+        // TODO:
         //  Please call Date and Time API to arrange the `meeting` to 7 days later. Please Note
         //  that the daylight saving time changes during that time.
         // <--start
@@ -112,7 +112,7 @@ class DateTimeTest {
                 LocalDateTime.of(2018, 8, 3, 0, 0, 0),
                 ZoneId.of("Asia/Shanghai"));
 
-        // SUPER_TODO:
+        // TODO:
         //  please call Date and Time API to format date time to ISO 8601 Date Time
         //  with Offset Information.
         //
@@ -132,7 +132,7 @@ class DateTimeTest {
     void should_be_able_to_parse_date_time() {
         final String expect = "2018-08-03T00:00:00+08:00";
 
-        // SUPER_TODO:
+        // TODO:
         //  please call Date and Time API to parse the date time from an string (ISO Offset format).
         // <--start
         ZonedDateTime parsed = null;

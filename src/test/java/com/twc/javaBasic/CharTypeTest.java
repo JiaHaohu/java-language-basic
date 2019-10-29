@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class CharTypeTest {
     @Test
     void should_describe_escaped_chars() {
-        // SUPER_TODO:
+        // TODO:
         //  Please write down the correct escaped characters.
         //
         // Hint:

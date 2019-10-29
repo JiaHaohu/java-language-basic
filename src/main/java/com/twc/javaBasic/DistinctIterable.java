@@ -22,7 +22,7 @@ public class DistinctIterable<T> implements Iterable<T> {
 }
 
 class DistinctIterator<E> implements Iterator<E> {
-    // SUPER_TODO:
+    // TODO:
     //  please implements the following code to pass the test. Note that the test will generate
     //  giga-bytes of duplicated data. So please be aware that do not put lots of data into memory.
     //

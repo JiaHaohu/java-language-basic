@@ -18,7 +18,7 @@ class ObjectTest {
 
         final boolean referenceToSameObject = objectReference == sameReference;
 
-        // SUPER_TODO:
+        // TODO:
         //  Please write down your answer directly.
         // <--start
         final Optional<Boolean> expected = Optional.empty();
@@ -35,7 +35,7 @@ class ObjectTest {
 
         final boolean referenceToSameObject = goodDay == sameDay;
 
-        // SUPER_TODO:
+        // TODO:
         //  Please write down your answer directly.
         // <--start
         final Optional<Boolean> expected = Optional.empty();
@@ -49,7 +49,7 @@ class ObjectTest {
     void should_initialized_to_default_value() {
         FieldNotExplicitlyInitialized instance = new FieldNotExplicitlyInitialized();
 
-        // SUPER_TODO:
+        // TODO:
         //  Please write down your answer directly.
         //
         // Hint
@@ -71,7 +71,7 @@ class ObjectTest {
 
         tryingToUpdateValue(value);
 
-        // SUPER_TODO:
+        // TODO:
         //  Please write down your answer directly.
         //
         // Hint
@@ -96,7 +96,7 @@ class ObjectTest {
 
         Object instanceCreatedByMethod = tryingToUpdateReference(objectReference);
 
-        // SUPER_TODO:
+        // TODO:
         //  Please write down your answer directly. You can only choose from
         //  `sameReference` and `instanceCreatedByMethod`.
         //
@@ -115,7 +115,7 @@ class ObjectTest {
 
         tryingToUpdateState(instance);
 
-        // SUPER_TODO:
+        // TODO:
         //  Please write down your answer directly.
         //
         // Hint
@@ -133,7 +133,7 @@ class ObjectTest {
 
         String actual = fixture.methodWithOneParameter((Object)"I am a string");
 
-        // SUPER_TODO:
+        // TODO:
         //  Please write down your answer directly.
         //
         //  If you find it difficult, please check page 172 of "Core Java Vol 1", section 4.6.1.
@@ -152,7 +152,7 @@ class ObjectTest {
 
         String actual = fixture.methodWithTwoParameters(name, integer);
 
-        // SUPER_TODO:
+        // TODO:
         //  Please write down your answer directly.
         //
         // Hint
@@ -168,7 +168,7 @@ class ObjectTest {
     void should_calling_another_constructor() {
         CallingAnotherCtor instance = new CallingAnotherCtor();
 
-        // SUPER_TODO:
+        // TODO:
         //  Please write down your answer directly.
         //
         // Hint
@@ -187,7 +187,7 @@ class ObjectTest {
         InitializationOrderClass instance = new InitializationOrderClass();
         String[] logs = InitializationOrderClass.getLogs();
 
-        // SUPER_TODO:
+        // TODO:
         //  Please write down your answer directly.
         //
         // Hint
@@ -203,7 +203,7 @@ class ObjectTest {
     void should_get_message_of_var_length_parameters() {
         final String message = getMessageOfVarLengthParameters(1, 2, 3);
 
-        // SUPER_TODO:
+        // TODO:
         //  Please write down your answer directly.
         //
         // Hint:
@@ -221,7 +221,7 @@ class ObjectTest {
     void should_get_message_of_var_length_parameters_2() {
         final String message = getMessageOfVarLengthParameters(new Object[] {1, 2, 3});
 
-        // SUPER_TODO:
+        // TODO:
         //  Please write down your answer directly.
         //
         // Hint

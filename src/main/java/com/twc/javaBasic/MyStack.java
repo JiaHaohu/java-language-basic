@@ -22,7 +22,7 @@ public class MyStack {
             ensureCapacity();
         }
 
-        // SUPER_TODO: Please push the value into the storage here.
+        // TODO: Please push the value into the storage here.
         // <--start
 
         // --end-->
@@ -31,7 +31,7 @@ public class MyStack {
     private void ensureCapacity() {
         int newCapacity = capacity * GROW_FACTOR;
 
-        // SUPER_TODO:
+        // TODO:
         //  Please create a new array of size newCapacity. Copy the original values into The new
         //  array, and update related fields.
         //  IMPORTANT: You SHOULD NOT USE COLLECTIONS (such as List<T>) OTHER THAN ARRAY.
@@ -55,7 +55,7 @@ public class MyStack {
     }
 
     private int pop() {
-        // SUPER_TODO:
+        // TODO:
         //  Please pop one element from the array. You should update the `count` field
         //  as well.
         // <--start

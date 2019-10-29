@@ -15,7 +15,7 @@ class GenericTest {
     void should_auto_resolve_generic_method() {
         final String[] words = {"Hello", "Good", "Morning"};
 
-        // SUPER_TODO:
+        // TODO:
         //  The getMiddle method is a generic method. Now, please call getMiddle method for string
         //  type.
         // <--start
@@ -40,7 +40,7 @@ class GenericTest {
         KeyValuePair<String, Integer> pair = new KeyValuePair<>("name", 2);
         KeyValuePair<Integer, String> pairWithDifferentTypeParameter = new KeyValuePair<>(2, "name");
 
-        // SUPER_TODO:
+        // TODO:
         //  Please write your answer directly.
         //
         // Hint:
@@ -70,7 +70,7 @@ class GenericTest {
             willThrow = true;
         }
 
-        // SUPER_TODO:
+        // TODO:
         //  Please write down your answer directly.
         //
         // Hint:
@@ -97,7 +97,7 @@ class GenericTest {
         return args[args.length / 2];
     }
 
-    // SUPER_TODO:
+    // TODO:
     //  please implement the following code to pass the test. It should be generic
     //  after all. The method should only accept `Number` and the number should
     //  implement `Comparable<T>`.
@@ -109,7 +109,7 @@ class GenericTest {
     }
     // --end-->
 
-    // SUPER_TODO:
+    // TODO:
     //  please implement following method to pass the test. The method should be able
     //  to swap fields in a pair. But you cannot change the signature of the function.
     //  If you find it difficult, please check page 448 of "Core Java Vol 1", section
@@ -122,7 +122,7 @@ class GenericTest {
         throw new RuntimeException("Not implemented");
     }
 
-    // SUPER_TODO: You can add additional method within the range if you like
+    // TODO: You can add additional method within the range if you like
 
     // --end-->
 }

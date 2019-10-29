@@ -8,7 +8,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class RegexTest {
-    // SUPER_TODO: If you find this part difficult. please check the following documentation:
+    // TODO: If you find this part difficult. please check the following documentation:
     //  https://docs.oracle.com/javase/tutorial/essential/regex/index.html
 
     @Test
@@ -28,7 +28,7 @@ class RegexTest {
     }
 
     private static List<Match> findMatch(String text, String regex) {
-        // SUPER_TODO:
+        // TODO:
         //  Please implement the method to find all matches in the `text` against specified
         //  regular expression.
         // <--start-
@@ -38,7 +38,7 @@ class RegexTest {
 
     @Test
     void should_match_character_classes() {
-        // SUPER_TODO:
+        // TODO:
         //  Please create an expression which extract something that begins with 'b' and
         //  ends with 't'. The interval should contains one or more lowercase English
         //  characters.
@@ -57,7 +57,7 @@ class RegexTest {
 
     @Test
     void should_match_predefined_classes_and_groups() {
-        // SUPER_TODO:
+        // TODO:
         //  Please create an expression which extract something that begins with a
         //  word character, following with a white space character. Repeating 3 times.
         // <-start--
@@ -75,7 +75,7 @@ class RegexTest {
 
     @Test
     void should_match_boundary() {
-        // SUPER_TODO:
+        // TODO:
         //  Please create an expression which extract English words "dog".
         // <-start--
         final String regex = "";

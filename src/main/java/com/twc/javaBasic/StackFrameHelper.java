@@ -2,7 +2,7 @@ package com.twc.javaBasic;
 
 public class StackFrameHelper {
     public static String getCurrentMethodName() {
-        // SUPER_TODO:
+        // TODO:
         //  Please modify the following code to pass the test. This method will return the name of
         //  the method.
         //

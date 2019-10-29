@@ -10,7 +10,7 @@ class FloatingTypeTest {
         final float floatingPointNumber = 2.75f;
         final int integer = (int)floatingPointNumber;
 
-        // SUPER_TODO:
+        // TODO:
         //  Please write down the answer directly.
         //
         // Hint:
@@ -41,7 +41,7 @@ class FloatingTypeTest {
         final float floatingPointNumber = 2.75f;
         final int integer = (int)floatingPointNumber;
 
-        // SUPER_TODO:
+        // TODO:
         //  Please write down you answer directly.
         //
         // Hint:
@@ -57,7 +57,7 @@ class FloatingTypeTest {
     void should_round_number() {
         final double floatingPointNumber = 2.75;
 
-        // SUPER_TODO:
+        // TODO:
         //  Please call some method to round the floating point number.
         //
         // Hint:
@@ -72,7 +72,7 @@ class FloatingTypeTest {
 
     @SuppressWarnings("unused")
     private boolean isNan(double realNumber) {
-        // SUPER_TODO:
+        // TODO:
         //  please implement the method to pass the test. It is better you call existing
         //  API rather than implemented yourself.
         throw new RuntimeException("Not implemented");
@@ -80,7 +80,7 @@ class FloatingTypeTest {
 
     @SuppressWarnings("unused")
     private boolean isInfinity(double realNumber) {
-        // SUPER_TODO:
+        // TODO:
         //  please implement the method to pass the test. It is better you call existing
         //  API rather than implemented yourself.
         throw new RuntimeException("Not implemented");

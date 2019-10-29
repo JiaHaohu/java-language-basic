@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class InheritanceTest {
     @Test
     void should_be_derived_from_object_class() {
-        // SUPER_TODO:
+        // TODO:
         //  Please write down the class type directly.
         //
         // Hint:
@@ -26,7 +26,7 @@ class InheritanceTest {
     void should_call_super_class_constructor() {
         DerivedFromSuperClassWithDefaultConstructor instance = new DerivedFromSuperClassWithDefaultConstructor();
 
-        // SUPER_TODO:
+        // TODO:
         //  You should write the answer directly.
         //
         // Hint:
@@ -44,7 +44,7 @@ class InheritanceTest {
     void should_call_super_class_constructor_continued() {
         DerivedFromSuperClassWithDefaultConstructor instance = new DerivedFromSuperClassWithDefaultConstructor(42);
 
-        // SUPER_TODO:
+        // TODO:
         //  You should write the answer directly.
         //
         // Hint:
@@ -62,7 +62,7 @@ class InheritanceTest {
     void should_call_super_class_constructor_more() {
         DerivedFromSuperClassWithDefaultConstructor instance = new DerivedFromSuperClassWithDefaultConstructor("God");
 
-        // SUPER_TODO:
+        // TODO:
         //  You should write the answer directly.
         //
         // Hint:
@@ -80,7 +80,7 @@ class InheritanceTest {
     void should_call_most_derived_methods() {
         BaseClassForOverriding instance = new DerivedFromBaseClassForOverriding();
 
-        // SUPER_TODO:
+        // TODO:
         //  You should write the answer directly.
         // <--start
         final String expectedName = "";
@@ -93,7 +93,7 @@ class InheritanceTest {
     void should_call_super_class_methods() {
         DerivedFromBaseClassForOverridingCallingSuper instance = new DerivedFromBaseClassForOverridingCallingSuper();
 
-        // SUPER_TODO: You should write the answer directly.
+        // TODO: You should write the answer directly.
         // <--start
         final String expectedName = "";
         // --end-->
@@ -115,7 +115,7 @@ class InheritanceTest {
             willThrow = true;
         }
 
-        // SUPER_TODO:
+        // TODO:
         //  You should write the answer directly.
         //
         // Hint:
@@ -133,7 +133,7 @@ class InheritanceTest {
         NestedDerivedClassWithName nested = new NestedDerivedClassWithName();
         DerivedFromBaseClassWithName derived = nested;
 
-        // SUPER_TODO:
+        // TODO:
         //  You should write the answer directly.
         // <--start
         final String expected = "";
@@ -146,7 +146,7 @@ class InheritanceTest {
     void should_not_make_you_confused_2() {
         DerivedFromBaseClassWithName derived = new DerivedFromBaseClassWithName();
 
-        // SUPER_TODO:
+        // TODO:
         //  You should write the answer directly.
         // <--start
         final String expected = "";
@@ -160,7 +160,7 @@ class InheritanceTest {
     void should_use_instance_of_to_determine_inheritance_relationship() {
         NestedDerivedClassWithName nested = new NestedDerivedClassWithName();
 
-        // SUPER_TODO:
+        // TODO:
         //  You should write the answer directly.
         //
         // Hint:
@@ -181,7 +181,7 @@ class InheritanceTest {
     void should_use_instance_of_only_in_inheritance_relationship() {
         final Object integer = new Integer(42);  // the magic of life
 
-        // SUPER_TODO:
+        // TODO:
         //  You should write the answer directly.
         //
         // Hint:

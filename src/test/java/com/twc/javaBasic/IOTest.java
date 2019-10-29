@@ -24,7 +24,7 @@ class IOTest {
 
     @SuppressWarnings("SameParameterValue")
     private static void writeAllText(String message, Path filePath, Charset charset) throws IOException {
-        // SUPER_TODO:
+        // TODO:
         //  please implement the method to writer text to file using `PrintWriter`.
         //
         // Hint:
@@ -38,7 +38,7 @@ class IOTest {
 
     @SuppressWarnings("SameParameterValue")
     private static String readAllText(Path path, Charset charset) throws IOException {
-        // SUPER_TODO:
+        // TODO:
         //  Please implement the method to read text from file using `Files` helper
         //  methods.
         //
@@ -56,7 +56,7 @@ class IOTest {
         final int firstValue = 2018;
         final double pi = 3.14;
 
-        // SUPER_TODO:
+        // TODO:
         //  please write `firstValue` and `pi` to `filePath`
         //
         // Hint
@@ -68,7 +68,7 @@ class IOTest {
         int actualFirstValue = 0;
         double actualPi = 0;
 
-        // SUPER_TODO: please read `actualFirstValue` and `actualPi` from `filePath`
+        // TODO: please read `actualFirstValue` and `actualPi` from `filePath`
         // <--start
 
         // --end-->

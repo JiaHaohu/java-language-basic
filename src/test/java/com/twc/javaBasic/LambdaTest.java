@@ -15,7 +15,7 @@ class LambdaTest {
     void should_apply_to_interface_with_single_abstract_method() {
         StringFunc lambda = () -> "Hello";
 
-        // SUPER_TODO:
+        // TODO:
         //  You should write down the answer directly.
         //
         // Hint
@@ -29,7 +29,7 @@ class LambdaTest {
 
     @Test
     void should_be_able_to_bind_to_instance_method() {
-        // SUPER_TODO:
+        // TODO:
         //  please bind lambda to `instanceMethod()` in this class.
         //
         // Hint
@@ -43,7 +43,7 @@ class LambdaTest {
 
     @Test
     void should_be_able_to_bind_to_static_method() {
-        // SUPER_TODO:
+        // TODO:
         //  please bind lambda to `staticMethod()` in this class.
         //
         // Hint:
@@ -57,7 +57,7 @@ class LambdaTest {
 
     @Test
     void should_bind_to_constructor() {
-        // SUPER_TODO:
+        // TODO:
         //  please bind lambda to constructor of ArrayList<Integer>.
         //
         // Hint:
@@ -79,7 +79,7 @@ class LambdaTest {
 
         final String message = lambda.getString();
 
-        // SUPER_TODO:
+        // TODO:
         //  Please write down the answer directly.
         //
         // Hint
@@ -98,7 +98,7 @@ class LambdaTest {
 
         StringFunc lambda = () -> "The length of captured value is: " + value.getValue().length();
 
-        // SUPER_TODO:
+        // TODO:
         //  please write down the expected string directly.
         //
         // Hint:
@@ -117,7 +117,7 @@ class LambdaTest {
         StringFunc stringFunc = returnLambda();
         String message = stringFunc.getString();
 
-        // SUPER_TODO:
+        // TODO:
         //  please write down the expected string directly.
         //
         // Hint
@@ -134,7 +134,7 @@ class LambdaTest {
         ThisInClosure instance = new ThisInClosure();
         StringFunc stringFunc = instance.getLambda();
 
-        // SUPER_TODO:
+        // TODO:
         //  please write down the expected string directly.
         // <--start
         final String expected = "";

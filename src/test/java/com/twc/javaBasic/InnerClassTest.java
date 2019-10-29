@@ -17,7 +17,7 @@ class InnerClassTest {
         InnerClassUpdateField instance = new InnerClassUpdateField();
         instance.somethingHappen();
 
-        // SUPER_TODO:
+        // TODO:
         //  Please write down your answer directly.
         //
         // Hint:
@@ -36,7 +36,7 @@ class InnerClassTest {
         InnerClassUpdateField.YearIncrementer incrementer = instance.new YearIncrementer();
         incrementer.increment();
 
-        // SUPER_TODO:
+        // TODO:
         //  Please write down your answer directly.
         //
         // Hint:
@@ -53,7 +53,7 @@ class InnerClassTest {
         LocalClassUpdateField instance = new LocalClassUpdateField();
         instance.somethingHappen();
 
-        // SUPER_TODO:
+        // TODO:
         //  Please write down your answer directly.
         //
         // Hint:
@@ -71,7 +71,7 @@ class InnerClassTest {
         AnonymousClassUpdateField instance = new AnonymousClassUpdateField();
         instance.somethingHappen();
 
-        // SUPER_TODO:
+        // TODO:
         //  Please write down your answer directly.
         //
         // Hint:
@@ -88,7 +88,7 @@ class InnerClassTest {
         StaticInnerClass instance = new StaticInnerClass();
         StaticInnerClass.Inner inner = instance.createInner();
 
-        // SUPER_TODO:
+        // TODO:
         //  Please write down your answer directly.
         //
         // Hint:

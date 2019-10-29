@@ -31,7 +31,7 @@ public class PersonForEquals {
 
     @Override
     public boolean equals(Object obj) {
-        // SUPER_TODO:
+        // TODO:
         //  Please implement equals.
         //
         // Hint:
@@ -53,7 +53,7 @@ public class PersonForEquals {
 
     @Override
     public int hashCode() {
-        // SUPER_TODO:
+        // TODO:
         //  please implement hashCode.
         //
         // Hint:

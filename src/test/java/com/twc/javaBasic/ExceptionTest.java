@@ -39,7 +39,7 @@ class ExceptionTest {
     void should_be_careful_of_the_order_of_finally_block() {
         int confusedResult = confuse(2);
 
-        // SUPER_TODO:
+        // TODO:
         //  Please write down your answer directly.
         //
         // Hint:
@@ -59,7 +59,7 @@ class ExceptionTest {
             assertFalse(closable.isClosed());
         }
 
-        // SUPER_TODO:
+        // TODO:
         //  Please write down your answer directly.
         //
         // Hint:
@@ -84,7 +84,7 @@ class ExceptionTest {
             // It is okay!
         }
 
-        // SUPER_TODO:
+        // TODO:
         //  Please write down your answer directly.
         //
         // Hint:
