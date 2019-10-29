@@ -17,9 +17,11 @@ class InnerClassTest {
         InnerClassUpdateField instance = new InnerClassUpdateField();
         instance.somethingHappen();
 
-        // TODO:
-        //  Please write down your answer directly. And if you want some references,
-        //  please check page 331 of "Core Java Vol 1", section 6.4.1.
+        // SUPER_TODO:
+        //  Please write down your answer directly.
+        //
+        // Hint:
+        //  If you want some references, please check page 331 of "Core Java Vol 1", section 6.4.1.
         // <--start
         final Optional<Integer> expected = Optional.empty();
         // --end-->
@@ -34,9 +36,11 @@ class InnerClassTest {
         InnerClassUpdateField.YearIncrementer incrementer = instance.new YearIncrementer();
         incrementer.increment();
 
-        // TODO:
-        //  Please write down your answer directly. And if you want some references,
-        //  please check page 334 of "Core Java Vol 1", section 6.4.2.
+        // SUPER_TODO:
+        //  Please write down your answer directly.
+        //
+        // Hint:
+        //  And if you want some references, please check page 334 of "Core Java Vol 1", section 6.4.2.
         // <--start
         final Optional<Integer> expected = Optional.empty();
         // --end-->
@@ -49,10 +53,12 @@ class InnerClassTest {
         LocalClassUpdateField instance = new LocalClassUpdateField();
         instance.somethingHappen();
 
-        // TODO:
-        //  Please write down your answer directly. And if you want some references,
-        //  please check page 331 of "Core Java Vol 1", section 6.4.1. and page 339,
-        //  section 6.4.4.
+        // SUPER_TODO:
+        //  Please write down your answer directly.
+        //
+        // Hint:
+        //  And if you want some references, please check page 331 of "Core Java Vol 1", section 6.4.1.
+        //  and page 339, section 6.4.4.
         // <--start
         final Optional<Integer> expected = Optional.empty();
         // --end-->
@@ -65,9 +71,11 @@ class InnerClassTest {
         AnonymousClassUpdateField instance = new AnonymousClassUpdateField();
         instance.somethingHappen();
 
-        // TODO:
-        //  Please write down your answer directly. And if you want some references,
-        //  please check page 342 of "Core Java Vol 1", section 6.4.6.
+        // SUPER_TODO:
+        //  Please write down your answer directly.
+        //
+        // Hint:
+        //  And if you want some references, please check page 342 of "Core Java Vol 1", section 6.4.6.
         // <--start
         final Optional<Integer> expected = Optional.empty();
         // --end-->
@@ -80,9 +88,11 @@ class InnerClassTest {
         StaticInnerClass instance = new StaticInnerClass();
         StaticInnerClass.Inner inner = instance.createInner();
 
-        // TODO:
-        //  Please write down your answer directly. And if you want some references,
-        //  please check page 346 of "Core Java Vol 1", section 6.4.7.
+        // SUPER_TODO:
+        //  Please write down your answer directly.
+        //
+        // Hint:
+        //  And if you want some references, please check page 346 of "Core Java Vol 1", section 6.4.7.
         // <--start
         final String expected = "";
         // --end-->

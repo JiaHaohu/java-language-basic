@@ -13,9 +13,11 @@ class InterfaceTest {
     void should_support_default_method() {
         InterfaceWithDefaultMethodImpl instance = new InterfaceWithDefaultMethodImpl();
 
-        // TODO:
-        //  Please write down your answer directly. If you find it difficult, please
-        //  check page 298 of "Core Java Vol 1", section 6.1.5.
+        // SUPER_TODO:
+        //  Please write down your answer directly.
+        //
+        // Hint:
+        //  If you find it difficult, please check page 298 of "Core Java Vol 1", section 6.1.5.
         // <--start
         final String expected = "";
         // --end-->
@@ -27,9 +29,11 @@ class InterfaceTest {
     void should_choose_override_method() {
         InterfaceWithOverrideDefaultImpl instance = new InterfaceWithOverrideDefaultImpl();
 
-        // TODO:
-        //  Please write down your answer directly. If you find it difficult, please
-        //  check page 298 of "Core Java Vol 1", section 6.1.5 and 6.1.6
+        // SUPER_TODO:
+        //  Please write down your answer directly.
+        //
+        // Hint:
+        //  If you find it difficult, please check page 298 of "Core Java Vol 1", section 6.1.5 and 6.1.6
         // <--start
         final String expected = "";
         // --end-->
@@ -41,9 +45,11 @@ class InterfaceTest {
     void should_choose_override_method_continued() {
         InterfaceExtendsInterfaceWithDefaultMethod instance = new InterfaceExtendsInterfaceWithDefaultMethodImpl();
 
-        // TODO:
-        //  Please write down your answer directly. If you find it difficult, please
-        //  check page 298 of "Core Java Vol 1", section 6.1.5 and 6.1.6
+        // SUPER_TODO:
+        //  Please write down your answer directly.
+        //
+        // Hint
+        //  If you find it difficult, please check page 298 of "Core Java Vol 1", section 6.1.5 and 6.1.6
         // <--start
         final String expected = "";
         // --end-->

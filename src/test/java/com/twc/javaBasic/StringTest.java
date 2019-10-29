@@ -14,8 +14,9 @@ class StringTest {
         String originalString = "The original string";
         String modifiedString = originalString.replace("original", "new");
 
-        // TODO: Please modify the following line to pass the test.
-        //  It is really easy to pass the test. But you have to tell why.
+        // SUPER_TODO:
+        //  Please modify the following line to pass the test. It is really easy to pass
+        //  the test. But you have to tell why.
         // <--start
         final boolean areSame = true;
         // --end-->
@@ -30,8 +31,9 @@ class StringTest {
         String originalString = "The string with tailing space.     ";
         String modifiedString = originalString.trim();
 
-        // TODO: Please modify the following line to pass the test.
-        //  It is really easy to pass the test. But you have to tell why.
+        // SUPER_TODO:
+        //  Please modify the following line to pass the test. It is really easy to pass
+        //  the test. But you have to tell why.
         // <--start
         final boolean areSame = true;
         // --end-->
@@ -47,8 +49,9 @@ class StringTest {
         String copyOfOriginalString = originalString;
         originalString += "Part two.";
 
-        // TODO: Please modify the following line to pass the test.
-        //  It is really easy to pass the test. But you have to tell why.
+        // SUPER_TODO:
+        //  Please modify the following line to pass the test. It is really easy to pass
+        //  the test. But you have to tell why.
         // <--start
         final boolean areSame = true;
         // --end-->
@@ -62,7 +65,8 @@ class StringTest {
     void should_taken_string_apart() {
         final String originalString = "Java is great";
 
-        // TODO: Take part of the original string according to expectation.
+        // SUPER_TODO:
+        //  Take part of the original string according to expectation.
         // <--start
         final String partOfString = null;
         // --end-->
@@ -77,7 +81,8 @@ class StringTest {
     void should_taken_string_apart_continued() {
         final String originalString = "Java is great.";
 
-        // TODO: Take part of the original string according to expectation.
+        // SUPER_TODO:
+        //  Take part of the original string according to expectation.
         // <--start
         final String partOfString = null;
         // --end-->
@@ -100,7 +105,7 @@ class StringTest {
     void should_break_string_into_words() {
         final String sentence = "This is Mike";
 
-        // TODO: Extract words in the sentence.
+        // SUPER_TODO: Extract words in the sentence.
         // <--Start
         String[] words = null;
         // --End-->
@@ -113,7 +118,7 @@ class StringTest {
     void should_break_string_into_words_customized() {
         final String sentence = "This/is/Mike";
 
-        // TODO: Extract words in the sentence.
+        // SUPER_TODO: Extract words in the sentence.
         // <--Start
         String[] words = null;
         // --End-->
@@ -127,7 +132,7 @@ class StringTest {
         final int width = 5;
         final int height = 3;
 
-        // TODO: Create string using StringBuilder
+        // SUPER_TODO: Create string using StringBuilder
         // <--Start
         StringBuilder builder = new StringBuilder();
         // --End-->
@@ -146,8 +151,9 @@ class StringTest {
         final String text = "A quick brown fox jumps over a lazy dog.";
 
         int sum = 0;
-        // TODO: Write some code to calculate the checksum of the string. The checksum
-        //  is the sum of each string char.
+        // SUPER_TODO:
+        //  Write some code to calculate the checksum of the string. The checksum is the
+        //  sum of each string char.
         // <--Start
 
         // --End-->
@@ -159,7 +165,8 @@ class StringTest {
     void should_convert_unicode_escape() {
         final String expected = "なにこれ";
 
-        // TODO: Write actual string using unicode escape. The unicode is as follows:
+        // SUPER_TODO:
+        //  Write actual string using unicode escape. The unicode is as follows:
         //  な - U+306a
         //  に - U+306b
         //  こ - U+3053
@@ -176,7 +183,8 @@ class StringTest {
     void should_reverse_a_string() {
         final String original = "123456";
 
-        // TODO: Modify the following code to create new string from original String
+        // SUPER_TODO:
+        //  Modify the following code to create new string from original String
         // <--Start
         final String reversed = null;
         // --End-->
@@ -193,7 +201,8 @@ class StringTest {
         Optional<Boolean> equalResult = Optional.of(upperCased.equals(lowerCased));
         Optional<Boolean> equalIgnoreCaseResult = Optional.of(upperCased.equalsIgnoreCase(lowerCased));
 
-        // TODO: Please change the value of the following 2 lines to pass the test.
+        // SUPER_TODO:
+        //  Please change the value of the following 2 lines to pass the test.
         // <--start
         Optional<Boolean> actualResultOfEqual = Optional.empty();
         Optional<Boolean> actualResultOfEqualIgnoreCase = Optional.empty();
@@ -208,11 +217,11 @@ class StringTest {
         final String withSurrogatePairs =
                 new String(Character.toChars(0x20B9F)) + " is a character that you may not know";
 
-        // TODO: please modify the following code to pass the test
+        // SUPER_TODO: please modify the following code to pass the test
         // <--start
-        // TODO: please write down the result directly.
+        // SUPER_TODO: please write down the result directly.
         final int expectedCharLength = Integer.MAX_VALUE;
-        // TODO: please call some method to calculate the result.
+        // SUPER_TODO: please call some method to calculate the result.
         final int actualCodePointLength = withSurrogatePairs.length();
         // --end-->
 
@@ -239,7 +248,7 @@ class StringTest {
 
         String text = String.format("Hello, %s. Next year, you will be %d.", name, age);
 
-        // TODO: please modify the following code to pass the test
+        // SUPER_TODO: please modify the following code to pass the test
         // <--start
         final String expectedText = "";
         // --end-->
@@ -248,7 +257,7 @@ class StringTest {
     }
 
     private int[] getCodePointsFromString(String withSurrogatePairs) {
-        // TODO: please implement the method to the pass the test
+        // SUPER_TODO: please implement the method to the pass the test
         // <--start
         throw new RuntimeException("Not implemented");
         // --end-->

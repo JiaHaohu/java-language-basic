@@ -15,9 +15,9 @@ class GenericTest {
     void should_auto_resolve_generic_method() {
         final String[] words = {"Hello", "Good", "Morning"};
 
-        // TODO:
-        //   The getMiddle method is a generic method. Now, please call getMiddle
-        //   method for string type.
+        // SUPER_TODO:
+        //  The getMiddle method is a generic method. Now, please call getMiddle method for string
+        //  type.
         // <--start
         final String middle = null;
         // --end-->
@@ -40,9 +40,15 @@ class GenericTest {
         KeyValuePair<String, Integer> pair = new KeyValuePair<>("name", 2);
         KeyValuePair<Integer, String> pairWithDifferentTypeParameter = new KeyValuePair<>(2, "name");
 
-        // TODO:
-        //  Please write your answer directly. If you find it difficult. Please check
-        //  page 425 of "Core Java Vol 1", section 8.5.1.
+        // SUPER_TODO:
+        //  Please write your answer directly.
+        //
+        // Hint:
+        //  Whenever you define a generic type, a corresponding raw type is automatically provided.
+        //  The name of the raw type is simply the name of the generic type, with the type
+        //  parameters removed. The type variables are erased and replaced by their bounding types
+        //  (or Object for variables without bounds). Please check page 425 of "Core Java Vol 1",
+        //  section 8.5.1.
         // <--start
         final Optional<Boolean> expected = Optional.empty();
         // --end-->
@@ -64,9 +70,11 @@ class GenericTest {
             willThrow = true;
         }
 
-        // TODO:
-        //  Please write down your answer directly. If you find it difficult. Please check
-        //  page 425 of "Core Java Vol 1", section 8.5.1.
+        // SUPER_TODO:
+        //  Please write down your answer directly.
+        //
+        // Hint:
+        //  If you find it difficult. Please check page 425 of "Core Java Vol 1", section 8.5.1.
         // <--start
         final Optional<Boolean> expected = Optional.empty();
         // --end-->
@@ -89,7 +97,7 @@ class GenericTest {
         return args[args.length / 2];
     }
 
-    // TODO:
+    // SUPER_TODO:
     //  please implement the following code to pass the test. It should be generic
     //  after all. The method should only accept `Number` and the number should
     //  implement `Comparable<T>`.
@@ -101,17 +109,20 @@ class GenericTest {
     }
     // --end-->
 
-    // TODO:
+    // SUPER_TODO:
     //  please implement following method to pass the test. The method should be able
     //  to swap fields in a pair. But you cannot change the signature of the function.
     //  If you find it difficult, please check page 448 of "Core Java Vol 1", section
     //  8.8.4.
+    //
+    // Hint:
+    //  A wildcard is not a type variable, so we can’t write code that uses ? as a type.
     // <--start
     private static void swap(Pair<?> pair) {
         throw new RuntimeException("Not implemented");
     }
 
-    // TODO: You can add additional method within the range if you like
+    // SUPER_TODO: You can add additional method within the range if you like
 
     // --end-->
 }

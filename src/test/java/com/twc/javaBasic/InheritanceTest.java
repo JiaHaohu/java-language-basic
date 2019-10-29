@@ -10,9 +10,11 @@ import static org.junit.jupiter.api.Assertions.*;
 class InheritanceTest {
     @Test
     void should_be_derived_from_object_class() {
-        // TODO:
-        //  Please write down the class type directly. If you find it difficult, please
-        //  check the page 228 of "Core Java Vol 1", section 5.2.
+        // SUPER_TODO:
+        //  Please write down the class type directly.
+        //
+        // Hint:
+        //  If you find it difficult, please check the page 228 of "Core Java Vol 1", section 5.2.
         // <--start
         final Class<?> expectedSuperClass = null;
         // --end-->
@@ -24,9 +26,11 @@ class InheritanceTest {
     void should_call_super_class_constructor() {
         DerivedFromSuperClassWithDefaultConstructor instance = new DerivedFromSuperClassWithDefaultConstructor();
 
-        // TODO:
-        //  You should write the answer directly. If you find it difficult, please check
-        //  page 207 of "Core Java Vol 1", section 5.1.3.
+        // SUPER_TODO:
+        //  You should write the answer directly.
+        //
+        // Hint:
+        //  If you find it difficult, please check page 207 of "Core Java Vol 1", section 5.1.3.
         // <--start
         final String[] expected = {};
         // --end-->
@@ -40,9 +44,11 @@ class InheritanceTest {
     void should_call_super_class_constructor_continued() {
         DerivedFromSuperClassWithDefaultConstructor instance = new DerivedFromSuperClassWithDefaultConstructor(42);
 
-        // TODO:
-        //  You should write the answer directly. If you find it difficult, please check
-        //  page 207 of "Core Java Vol 1", section 5.1.3.
+        // SUPER_TODO:
+        //  You should write the answer directly.
+        //
+        // Hint:
+        //  If you find it difficult, please check page 207 of "Core Java Vol 1", section 5.1.3.
         // <--start
         final String[] expected = {};
         // --end-->
@@ -56,9 +62,11 @@ class InheritanceTest {
     void should_call_super_class_constructor_more() {
         DerivedFromSuperClassWithDefaultConstructor instance = new DerivedFromSuperClassWithDefaultConstructor("God");
 
-        // TODO:
-        //  You should write the answer directly. If you find it difficult, please check
-        //  page 207 of "Core Java Vol 1", section 5.1.3.
+        // SUPER_TODO:
+        //  You should write the answer directly.
+        //
+        // Hint:
+        //  If you find it difficult, please check page 207 of "Core Java Vol 1", section 5.1.3.
         // <--start
         final String[] expected = {};
         // --end-->
@@ -72,7 +80,8 @@ class InheritanceTest {
     void should_call_most_derived_methods() {
         BaseClassForOverriding instance = new DerivedFromBaseClassForOverriding();
 
-        // TODO: You should write the answer directly.
+        // SUPER_TODO:
+        //  You should write the answer directly.
         // <--start
         final String expectedName = "";
         // --end-->
@@ -84,7 +93,7 @@ class InheritanceTest {
     void should_call_super_class_methods() {
         DerivedFromBaseClassForOverridingCallingSuper instance = new DerivedFromBaseClassForOverridingCallingSuper();
 
-        // TODO: You should write the answer directly.
+        // SUPER_TODO: You should write the answer directly.
         // <--start
         final String expectedName = "";
         // --end-->
@@ -106,9 +115,11 @@ class InheritanceTest {
             willThrow = true;
         }
 
-        // TODO:
-        //  You should write the answer directly. If you meet difficulties, you can refer
-        //  to page 213 of "Core Java Vol 1", section 5.1.5.
+        // SUPER_TODO:
+        //  You should write the answer directly.
+        //
+        // Hint:
+        //  If you meet difficulties, you can refer to page 213 of "Core Java Vol 1", section 5.1.5.
         // <--start
         final Optional<Boolean> expected = Optional.empty();
         // --end-->
@@ -122,7 +133,7 @@ class InheritanceTest {
         NestedDerivedClassWithName nested = new NestedDerivedClassWithName();
         DerivedFromBaseClassWithName derived = nested;
 
-        // TODO:
+        // SUPER_TODO:
         //  You should write the answer directly.
         // <--start
         final String expected = "";
@@ -135,7 +146,7 @@ class InheritanceTest {
     void should_not_make_you_confused_2() {
         DerivedFromBaseClassWithName derived = new DerivedFromBaseClassWithName();
 
-        // TODO:
+        // SUPER_TODO:
         //  You should write the answer directly.
         // <--start
         final String expected = "";
@@ -149,9 +160,11 @@ class InheritanceTest {
     void should_use_instance_of_to_determine_inheritance_relationship() {
         NestedDerivedClassWithName nested = new NestedDerivedClassWithName();
 
-        // TODO:
-        //  You should write the answer directly. If you find it difficult, please
-        //  refer to page 220 of "Java Core Vol 1", section 5.1.8.
+        // SUPER_TODO:
+        //  You should write the answer directly.
+        //
+        // Hint:
+        //  If you find it difficult, please refer to page 220 of "Java Core Vol 1", section 5.1.8.
         // <--start
         final Optional<Boolean> expectedResult1 = Optional.empty();
         final Optional<Boolean> expectedResult2 = Optional.empty();
@@ -168,9 +181,11 @@ class InheritanceTest {
     void should_use_instance_of_only_in_inheritance_relationship() {
         final Object integer = new Integer(42);  // the magic of life
 
-        // TODO:
-        //  You should write the answer directly. If you find it difficult, please
-        //  refer to page 220 of "Java Core Vol 1", section 5.1.8.
+        // SUPER_TODO:
+        //  You should write the answer directly.
+        //
+        // Hint:
+        //  If you find it difficult, please refer to page 220 of "Java Core Vol 1", section 5.1.8.
         // <--start
         final Optional<Boolean> expectedResult1 = Optional.empty();
         final Optional<Boolean> expectedResult2 = Optional.empty();

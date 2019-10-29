@@ -18,7 +18,7 @@ class ObjectTest {
 
         final boolean referenceToSameObject = objectReference == sameReference;
 
-        // TODO:
+        // SUPER_TODO:
         //  Please write down your answer directly.
         // <--start
         final Optional<Boolean> expected = Optional.empty();
@@ -35,7 +35,7 @@ class ObjectTest {
 
         final boolean referenceToSameObject = goodDay == sameDay;
 
-        // TODO:
+        // SUPER_TODO:
         //  Please write down your answer directly.
         // <--start
         final Optional<Boolean> expected = Optional.empty();
@@ -49,9 +49,11 @@ class ObjectTest {
     void should_initialized_to_default_value() {
         FieldNotExplicitlyInitialized instance = new FieldNotExplicitlyInitialized();
 
-        // TODO:
-        //  Please write down your answer directly. If you find it difficult, please
-        //  check page 172 of "Core Java Vol 1", section 4.6.2.
+        // SUPER_TODO:
+        //  Please write down your answer directly.
+        //
+        // Hint
+        //  If you find it difficult, please check page 172 of "Core Java Vol 1", section 4.6.2.
         // <--start
         final String expectedName = "expected";
         final int expectedYearOfBirth = Integer.MAX_VALUE;
@@ -69,9 +71,11 @@ class ObjectTest {
 
         tryingToUpdateValue(value);
 
-        // TODO:
-        //  Please write down your answer directly. If you find it difficult, please
-        //  check page 164 of "Core Java Vol 1", section 4.5.
+        // SUPER_TODO:
+        //  Please write down your answer directly.
+        //
+        // Hint
+        //  If you find it difficult, please check page 164 of "Core Java Vol 1", section 4.5.
         // <--start
         final int expected = Integer.MAX_VALUE;
         // --end-->
@@ -92,11 +96,12 @@ class ObjectTest {
 
         Object instanceCreatedByMethod = tryingToUpdateReference(objectReference);
 
-        // TODO:
+        // SUPER_TODO:
         //  Please write down your answer directly. You can only choose from
         //  `sameReference` and `instanceCreatedByMethod`.
-        //  If you find it difficult, please check page 164 of "Core Java Vol 1",
-        //  section 4.5.
+        //
+        // Hint
+        //  If you find it difficult, please check page 164 of "Core Java Vol 1", section 4.5.
         // <--start
         final Object expected = new Object();
         // --end-->
@@ -110,9 +115,11 @@ class ObjectTest {
 
         tryingToUpdateState(instance);
 
-        // TODO:
-        //  Please write down your answer directly. If you find it difficult, please
-        //  check page 164 of "Core Java Vol 1", section 4.5.
+        // SUPER_TODO:
+        //  Please write down your answer directly.
+        //
+        // Hint
+        //  If you find it difficult, please check page 164 of "Core Java Vol 1", section 4.5.
         // <--start
         final String expected = "";
         // --end-->
@@ -126,9 +133,10 @@ class ObjectTest {
 
         String actual = fixture.methodWithOneParameter((Object)"I am a string");
 
-        // TODO:
-        //  Please write down your answer directly. If you find it difficult, please
-        //  check page 172 of "Core Java Vol 1", section 4.6.1.
+        // SUPER_TODO:
+        //  Please write down your answer directly.
+        //
+        //  If you find it difficult, please check page 172 of "Core Java Vol 1", section 4.6.1.
         // <--start
         final String expected = "";
         // --end-->
@@ -144,9 +152,11 @@ class ObjectTest {
 
         String actual = fixture.methodWithTwoParameters(name, integer);
 
-        // TODO:
-        //  Please write down your answer directly. If you find it difficult, please
-        //  check page 172 of "Core Java Vol 1", section 4.6.1.
+        // SUPER_TODO:
+        //  Please write down your answer directly.
+        //
+        // Hint
+        //  If you find it difficult, please check page 172 of "Core Java Vol 1", section 4.6.1.
         // <--start
         final String expected = "";
         // --end-->
@@ -158,9 +168,11 @@ class ObjectTest {
     void should_calling_another_constructor() {
         CallingAnotherCtor instance = new CallingAnotherCtor();
 
-        // TODO:
-        //  Please write down your answer directly. If you find it difficult, please
-        //  check page 172 of "Core Java Vol 1", section 4.6.1.
+        // SUPER_TODO:
+        //  Please write down your answer directly.
+        //
+        // Hint
+        //  If you find it difficult, please check page 172 of "Core Java Vol 1", section 4.6.1.
         // <--start
         final String expected = "";
         // --end-->
@@ -175,9 +187,11 @@ class ObjectTest {
         InitializationOrderClass instance = new InitializationOrderClass();
         String[] logs = InitializationOrderClass.getLogs();
 
-        // TODO:
-        //  Please write down your answer directly. If you find it difficult, please
-        //  check page 172 of "Core Java Vol 1", section 4.6
+        // SUPER_TODO:
+        //  Please write down your answer directly.
+        //
+        // Hint
+        //  If you find it difficult, please check page 172 of "Core Java Vol 1", section 4.6
         // <--start
         final String[] expected = {};
         // --end-->
@@ -189,9 +203,11 @@ class ObjectTest {
     void should_get_message_of_var_length_parameters() {
         final String message = getMessageOfVarLengthParameters(1, 2, 3);
 
-        // TODO:
-        //  Please write down your answer directly. If you find it difficult, please
-        //  check page 256 of "Core Java Vol 1", section 5.5.
+        // SUPER_TODO:
+        //  Please write down your answer directly.
+        //
+        // Hint:
+        //  If you find it difficult, please check page 256 of "Core Java Vol 1", section 5.5.
         // <--start
         final String expected = "";
         // --end-->
@@ -205,9 +221,11 @@ class ObjectTest {
     void should_get_message_of_var_length_parameters_2() {
         final String message = getMessageOfVarLengthParameters(new Object[] {1, 2, 3});
 
-        // TODO:
-        //  Please write down your answer directly. If you find it difficult, please
-        //  check page 256 of "Core Java Vol 1", section 5.5.
+        // SUPER_TODO:
+        //  Please write down your answer directly.
+        //
+        // Hint
+        //  If you find it difficult, please check page 256 of "Core Java Vol 1", section 5.5.
         // <--start
         final String expected = "";
         // --end-->

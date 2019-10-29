@@ -10,9 +10,11 @@ class FloatingTypeTest {
         final float floatingPointNumber = 2.75f;
         final int integer = (int)floatingPointNumber;
 
-        // TODO:
-        //  Please write down the answer directly. If you find it difficult, please
-        //  check page 60 of "Core Java Vol 1", section 3.5.3.
+        // SUPER_TODO:
+        //  Please write down the answer directly.
+        //
+        // Hint:
+        //  If you find it difficult, please check page 60 of "Core Java Vol 1", section 3.5.3.
         // <!--start
         final int expected = Integer.MAX_VALUE;
         // --end-->
@@ -39,9 +41,11 @@ class FloatingTypeTest {
         final float floatingPointNumber = 2.75f;
         final int integer = (int)floatingPointNumber;
 
-        // TODO:
-        //  Please write down you answer directly. If you find it difficult, please
-        //  check page 60 of "Core Java Vol 1", section 3.5.3.
+        // SUPER_TODO:
+        //  Please write down you answer directly.
+        //
+        // Hint:
+        //  If you find it difficult, please check page 60 of "Core Java Vol 1", section 3.5.3.
         // <!--start
         final int expected = Integer.MAX_VALUE;
         // --end-->
@@ -53,9 +57,11 @@ class FloatingTypeTest {
     void should_round_number() {
         final double floatingPointNumber = 2.75;
 
-        // TODO:
-        //  Please call some method to round the floating point number. Okay, the
-        //  reference is here:
+        // SUPER_TODO:
+        //  Please call some method to round the floating point number.
+        //
+        // Hint:
+        //  The reference is here:
         //  https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html#round-double-
         // <!--start
         final long rounded = Long.MAX_VALUE;
@@ -66,7 +72,7 @@ class FloatingTypeTest {
 
     @SuppressWarnings("unused")
     private boolean isNan(double realNumber) {
-        // TODO:
+        // SUPER_TODO:
         //  please implement the method to pass the test. It is better you call existing
         //  API rather than implemented yourself.
         throw new RuntimeException("Not implemented");
@@ -74,7 +80,7 @@ class FloatingTypeTest {
 
     @SuppressWarnings("unused")
     private boolean isInfinity(double realNumber) {
-        // TODO:
+        // SUPER_TODO:
         //  please implement the method to pass the test. It is better you call existing
         //  API rather than implemented yourself.
         throw new RuntimeException("Not implemented");

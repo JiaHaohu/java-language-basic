@@ -11,12 +11,13 @@ class IntegerTypeTest {
         final int maximum = 0x7fffffff;
         final int minimum = 0x80000000;
 
-        // TODO:
+        // SUPER_TODO:
         //  You should not write concrete number here. Please find a property
-        //  or constant instead. If you want some reference. Please see
+        //  or constant instead.
+        //
+        //  If you want some reference. Please see
         //  https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html#MAX_VALUE
-        //  If you want some overview for integer types, you can refer to page
-        //  47 of "Core Java Vol 1".
+        //  If you want some overview for integer types, you can refer to page 47 of "Core Java Vol 1".
         // <!--start
         final int maximumSymbol = 0;
         final int minimumSymbol = 0;
@@ -31,7 +32,7 @@ class IntegerTypeTest {
         final short maximum = 32767;
         final short minimum = -32768;
 
-        // TODO:
+        // SUPER_TODO:
         //  You should not write concrete number here. Please find a property
         //  or constant instead.
         // <!--start
@@ -48,7 +49,7 @@ class IntegerTypeTest {
         final long maximum = 0x7fffffffffffffffL;
         final long minimum = -0x8000000000000000L;
 
-        // TODO:
+        // SUPER_TODO:
         //  You should not write concrete number here. Please find a property or
         //  constant instead.
         // <!--start
@@ -65,9 +66,8 @@ class IntegerTypeTest {
         final byte maximum = 127;
         final byte minimum = -128;
 
-        // TODO:
-        //  You should not write concrete number here. Please find a property
-        //  or constant instead.
+        // SUPER_TODO:
+        //  You should not write concrete number here. Please find a property or constant instead.
         // <!--start
         final byte maximumSymbol = 0;
         final byte minimumSymbol = 0;
@@ -82,9 +82,8 @@ class IntegerTypeTest {
         int theNumberWillOverflow = Integer.MAX_VALUE;
         ++theNumberWillOverflow;
 
-        // TODO:
-        //  Please correct the value to pass the test. You should write the
-        //  result directly.
+        // SUPER_TODO:
+        //  Please correct the value to pass the test. You should write the result directly.
         // <--start
         final int expectedResult = 0;
         // --end-->
@@ -97,9 +96,8 @@ class IntegerTypeTest {
         int theNumberWillUnderflow = Integer.MIN_VALUE;
         --theNumberWillUnderflow;
 
-        // TODO:
-        //  Please correct the value to pass the test. You should write the
-        //  result directly.
+        // SUPER_TODO:
+        //  Please correct the value to pass the test. You should write the result directly.
         // <--start
         final int expectedResult = 0;
         // --end-->
@@ -128,9 +126,11 @@ class IntegerTypeTest {
         final double result1 = 2 / 3 * 5;
         final double result2 = 2 * 5 / 3;
 
-        // TODO:
-        //  please modify the following lines to pass the test. If you want some reference
-        //  please see page 59 of "Core Java Vol 1", section 3.5.2.
+        // SUPER_TODO:
+        //  please modify the following lines to pass the test.
+        //
+        // Hint:
+        //  If you want some reference please see page 59 of "Core Java Vol 1", section 3.5.2.
         // <!--start
         final double expectedResult1 = Double.NaN;
         final double expectedResult2 = Double.NaN;
@@ -145,9 +145,8 @@ class IntegerTypeTest {
         final int integer = 0x0123_4567;
         final short smallerInteger = (short)integer;
 
-        // TODO:
-        //  please modify the following lines to pass the test. Please refer to page
-        //  60 of "Core Java Vol 1", section 3.5.3.
+        // SUPER_TODO:
+        //  please modify the following lines to pass the test. Please refer to page 60 of "Core Java Vol 1", section 3.5.3.
         // <!--start
         final short expected = 0;
         // --end-->
@@ -161,7 +160,7 @@ class IntegerTypeTest {
 
         int result = integer++;
 
-        // TODO:
+        // SUPER_TODO:
         //  please modify the following code to pass the test. You should write the
         //  result directly.
         // <--start
@@ -179,7 +178,7 @@ class IntegerTypeTest {
 
         int result = ++integer;
 
-        // TODO:
+        // SUPER_TODO:
         //   please modify the following code to pass the test. You should write the
         //   result directly.
         // <--start
@@ -192,10 +191,12 @@ class IntegerTypeTest {
     }
 
     private int add(int left, int right) {
-        // TODO:
+        // SUPER_TODO:
         //  Please implement the method. Adding two numbers. This method should throw
         //  ArithmeticException if overflow or underflow happens.
-        //  Hint: Java library contains method to do this. If you meet some difficulties
+        //
+        // Hint
+        //  Java library contains method to do this. If you meet some difficulties
         //  here please refer to the following document:
         //  https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html#addExact-int-int-
         throw new RuntimeException("Not implemented");

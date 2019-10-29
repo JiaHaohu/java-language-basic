@@ -15,9 +15,11 @@ class LambdaTest {
     void should_apply_to_interface_with_single_abstract_method() {
         StringFunc lambda = () -> "Hello";
 
-        // TODO:
-        //  You should write down the answer directly. For reference, please
-        //  check page 315 of "Core Java Vol 1", section 6.3.2.
+        // SUPER_TODO:
+        //  You should write down the answer directly.
+        //
+        // Hint
+        //  For reference, please check page 315 of "Core Java Vol 1", section 6.3.2.
         // <--start
         final String expect = "";
         // --end-->
@@ -27,8 +29,10 @@ class LambdaTest {
 
     @Test
     void should_be_able_to_bind_to_instance_method() {
-        // TODO:
+        // SUPER_TODO:
         //  please bind lambda to `instanceMethod()` in this class.
+        //
+        // Hint
         //  For reference please check page 319 of "Core Java Vol 1", section 6.3.4.
         // <--start
         StringFunc lambda = null;
@@ -39,7 +43,10 @@ class LambdaTest {
 
     @Test
     void should_be_able_to_bind_to_static_method() {
-        // TODO: please bind lambda to `staticMethod()` in this class.
+        // SUPER_TODO:
+        //  please bind lambda to `staticMethod()` in this class.
+        //
+        // Hint:
         //  For reference please check page 319 of "Core Java Vol 1", section 6.3.4.
         // <--start
         StringFunc lambda = null;
@@ -50,8 +57,10 @@ class LambdaTest {
 
     @Test
     void should_bind_to_constructor() {
-        // TODO:
+        // SUPER_TODO:
         //  please bind lambda to constructor of ArrayList<Integer>.
+        //
+        // Hint:
         //  For reference please check page 321 of "Core Java Vol 1", section 6.3.5.
         // <--start
         GenericFunc<ArrayList<Integer>> lambda = null;
@@ -70,8 +79,10 @@ class LambdaTest {
 
         final String message = lambda.getString();
 
-        // TODO:
+        // SUPER_TODO:
         //  Please write down the answer directly.
+        //
+        // Hint
         //  For reference please check page 322 of "Core Java Vol 1", section 6.3.6.
         // <--start
         final String expected = "";
@@ -87,8 +98,10 @@ class LambdaTest {
 
         StringFunc lambda = () -> "The length of captured value is: " + value.getValue().length();
 
-        // TODO:
+        // SUPER_TODO:
         //  please write down the expected string directly.
+        //
+        // Hint:
         //  For reference please check page 322 of "Core Java Vol 1", section 6.3.6. and
         //  section 6.3.7.
         // <--start
@@ -104,8 +117,10 @@ class LambdaTest {
         StringFunc stringFunc = returnLambda();
         String message = stringFunc.getString();
 
-        // TODO:
+        // SUPER_TODO:
         //  please write down the expected string directly.
+        //
+        // Hint
         //  For reference please check page 322 of "Core Java Vol 1", section 6.3.6.
         // <--start
         final String expected = "";
@@ -119,7 +134,8 @@ class LambdaTest {
         ThisInClosure instance = new ThisInClosure();
         StringFunc stringFunc = instance.getLambda();
 
-        // TODO: please write down the expected string directly.
+        // SUPER_TODO:
+        //  please write down the expected string directly.
         // <--start
         final String expected = "";
         // --end-->

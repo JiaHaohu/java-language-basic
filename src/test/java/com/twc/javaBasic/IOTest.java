@@ -24,8 +24,10 @@ class IOTest {
 
     @SuppressWarnings("SameParameterValue")
     private static void writeAllText(String message, Path filePath, Charset charset) throws IOException {
-        // TODO:
+        // SUPER_TODO:
         //  please implement the method to writer text to file using `PrintWriter`.
+        //
+        // Hint:
         //  If you need help, please check page 60 of "Core Java Vol 2", section
         //  2.2.1.
         // <--start
@@ -36,10 +38,12 @@ class IOTest {
 
     @SuppressWarnings("SameParameterValue")
     private static String readAllText(Path path, Charset charset) throws IOException {
-        // TODO:
+        // SUPER_TODO:
         //  Please implement the method to read text from file using `Files` helper
-        //  methods. If you need help, please check page 62 of "Core Java Vol 2",
-        //  section 2.2.2.
+        //  methods.
+        //
+        // Hint
+        //  If you need help, please check page 62 of "Core Java Vol 2", section 2.2.2.
         // <--start
         throw new RuntimeException("Not implemented");
         // --end-->
@@ -52,8 +56,10 @@ class IOTest {
         final int firstValue = 2018;
         final double pi = 3.14;
 
-        // TODO:
+        // SUPER_TODO:
         //  please write `firstValue` and `pi` to `filePath`
+        //
+        // Hint
         //  For help, please check page 69 of "Core Java Vol 2", section 2.3.
         // <--start
 
@@ -62,7 +68,7 @@ class IOTest {
         int actualFirstValue = 0;
         double actualPi = 0;
 
-        // TODO: please read `actualFirstValue` and `actualPi` from `filePath`
+        // SUPER_TODO: please read `actualFirstValue` and `actualPi` from `filePath`
         // <--start
 
         // --end-->
