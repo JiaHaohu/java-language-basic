@@ -98,16 +98,6 @@ class ExceptionTest {
         assertArrayEquals(expected, logger.toArray());
     }
 
-    @Test
-    void should_get_method_name_in_stack_frame() {
-        // Hint: please open `StackFrameHelper.java`.
-        String methodName = StackFrameHelper.getCurrentMethodName();
-
-        assertEquals(
-                "com.twc.javaBasic.ExceptionTest.should_get_method_name_in_stack_frame",
-                methodName);
-    }
-
     @SuppressWarnings({"ReturnInsideFinallyBlock", "SameParameterValue"})
     private int confuse(int value) {
         try {
