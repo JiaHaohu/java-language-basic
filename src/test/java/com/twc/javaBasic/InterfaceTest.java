@@ -9,6 +9,8 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class InterfaceTest {
+    // Recommended time used: 20 min
+
     @Test
     void should_support_default_method() {
         InterfaceWithDefaultMethodImpl instance = new InterfaceWithDefaultMethodImpl();

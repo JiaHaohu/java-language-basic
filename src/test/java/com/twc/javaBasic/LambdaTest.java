@@ -11,6 +11,8 @@ import java.util.ArrayList;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class LambdaTest {
+    // Recommended time used: 15 min
+
     @Test
     void should_apply_to_interface_with_single_abstract_method() {
         StringFunc lambda = () -> "Hello";
@@ -69,83 +71,6 @@ class LambdaTest {
         ArrayList<Integer> value = lambda.getValue();
 
         assertEquals(0, value.size());
-    }
-
-    @Test
-    void should_capture_variable_in_a_closure() {
-        int captured = 5;
-
-        StringFunc lambda = () -> captured + " has been captured.";
-
-        final String message = lambda.getString();
-
-        // TODO:
-        //  Please write down the answer directly.
-        //
-        // Hint
-        //  For reference please check page 322 of "Core Java Vol 1", section 6.3.6.
-        // <--start
-        final String expected = "";
-        // --end-->
-
-        assertEquals(expected, message);
-    }
-
-    @Test
-    void should_evaluate_captured_variable_when_executing() {
-        ValueHolder<String> value = new ValueHolder<>();
-        value.setValue("I am the King of the world!");
-
-        StringFunc lambda = () -> "The length of captured value is: " + value.getValue().length();
-
-        // TODO:
-        //  please write down the expected string directly.
-        //
-        // Hint:
-        //  For reference please check page 322 of "Core Java Vol 1", section 6.3.6. and
-        //  section 6.3.7.
-        // <--start
-        final String expected = "";
-        // --end-->
-
-        value.setValue("Blah");
-        assertEquals(expected, lambda.getString());
-    }
-
-    @Test
-    void should_extend_variable_scope() {
-        StringFunc stringFunc = returnLambda();
-        String message = stringFunc.getString();
-
-        // TODO:
-        //  please write down the expected string directly.
-        //
-        // Hint
-        //  For reference please check page 322 of "Core Java Vol 1", section 6.3.6.
-        // <--start
-        final String expected = "";
-        // --end-->
-
-        assertEquals(expected, message);
-    }
-
-    @Test
-    void should_capture_this_variable() {
-        ThisInClosure instance = new ThisInClosure();
-        StringFunc stringFunc = instance.getLambda();
-
-        // TODO:
-        //  please write down the expected string directly.
-        // <--start
-        final String expected = "";
-        // --end-->
-
-        assertEquals(expected, stringFunc.getString());
-    }
-
-    private static StringFunc returnLambda() {
-        int year = 2019;
-        return () -> "In the year " + year;
     }
 
     private static String staticMethod() {

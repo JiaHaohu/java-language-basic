@@ -11,6 +11,7 @@ import java.util.Optional;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class InnerClassTest {
+    // Recommended time used: 30 min
 
     @Test
     void should_access_instance_field_of_parent_class() {

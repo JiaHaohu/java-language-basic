@@ -8,6 +8,8 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class RegexTest {
+    // Recommended time used: 30 min
+
     // TODO: If you find this part difficult. please check the following documentation:
     //  https://docs.oracle.com/javase/tutorial/essential/regex/index.html
 

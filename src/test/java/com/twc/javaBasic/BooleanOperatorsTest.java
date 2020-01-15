@@ -6,6 +6,8 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class BooleanOperatorsTest {
+    // Recommended time used: 8 min
+
     @SuppressWarnings({"PointlessBooleanExpression", "ConstantConditions"})
     @Test
     void should_perform_logical_boolean_operations() {

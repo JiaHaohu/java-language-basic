@@ -8,6 +8,8 @@ import java.util.*;
 import static org.junit.jupiter.api.Assertions.assertIterableEquals;
 
 class CollectionsTest {
+    // Recommended time used: 15 min
+
     @Test
     void should_predict_linked_list_operation_result() {
         LinkedList<String> staff = new LinkedList<>();

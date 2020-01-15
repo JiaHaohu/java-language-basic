@@ -8,6 +8,8 @@ import java.util.Optional;
 import static org.junit.jupiter.api.Assertions.*;
 
 class InheritanceTest {
+    // Recommended time used: 60 min
+
     @Test
     void should_be_derived_from_object_class() {
         // TODO:

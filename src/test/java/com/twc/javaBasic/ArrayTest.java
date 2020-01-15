@@ -5,6 +5,8 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 class ArrayTest {
+    // Recommended time used: 20 min
+
     @Test
     void should_resize_array() {
         final int itemsCount = 25;

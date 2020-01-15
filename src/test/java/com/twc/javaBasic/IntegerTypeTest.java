@@ -6,6 +6,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class IntegerTypeTest {
+    // Recommended time used: 25 min
+
     @Test
     void should_get_range_of_primitive_int_type() {
         final int maximum = 0x7fffffff;

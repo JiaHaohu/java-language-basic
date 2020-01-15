@@ -6,6 +6,8 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class CharTypeTest {
+    // Recommended time used: 5 min
+
     @Test
     void should_describe_escaped_chars() {
         // TODO:

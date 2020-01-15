@@ -8,6 +8,8 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class StringTest {
+    // Recommended time used: 45 min
+
     @SuppressWarnings({"StringEquality", "ConstantConditions"})
     @Test
     void should_be_immutable() {

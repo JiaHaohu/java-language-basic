@@ -12,6 +12,8 @@ import java.util.Optional;
 import static org.junit.jupiter.api.Assertions.*;
 
 class ExceptionTest {
+    // Recommended time used: 30 min
+
     @Test
     void should_customize_exception() {
         try {
