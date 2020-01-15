@@ -58,13 +58,4 @@ class InterfaceTest {
 
         assertEquals(expected, instance.tellMeTheTruthOfTheUniverse());
     }
-
-    @Test
-    void should_resolve_ambiguity_by_yourself() {
-        NameImpl instance = new NameImpl();
-
-        String name = instance.getName();
-
-        assertEquals("Person", name);
-    }
 }

@@ -57,22 +57,6 @@ class LambdaTest {
         assertEquals("staticMethod", lambda.getString());
     }
 
-    @Test
-    void should_bind_to_constructor() {
-        // TODO:
-        //  please bind lambda to constructor of ArrayList<Integer>.
-        //
-        // Hint:
-        //  For reference please check page 321 of "Core Java Vol 1", section 6.3.5.
-        // <--start
-        GenericFunc<ArrayList<Integer>> lambda = null;
-        // --end-->
-
-        ArrayList<Integer> value = lambda.getValue();
-
-        assertEquals(0, value.size());
-    }
-
     private static String staticMethod() {
         return "staticMethod";
     }
