@@ -163,23 +163,6 @@ class StringTest {
         assertEquals(3655, sum);
     }
 
-    @Test
-    void should_convert_unicode_escape() {
-        final String expected = "なにこれ";
-
-        // TODO:
-        //  Write actual string using unicode escape. The unicode is as follows:
-        //  な - U+306a
-        //  に - U+306b
-        //  こ - U+3053
-        //  れ - U+308c
-        // <--Start
-        final String actual = "";
-        // --End-->
-
-        assertEquals(expected, actual);
-    }
-
     @SuppressWarnings("unused")
     @Test
     void should_reverse_a_string() {
